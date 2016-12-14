@@ -112,6 +112,10 @@ TREE
 {
 	testvccgnd::(0,0):(0): testvccgnd.gdf
 	{
+		userbuffer::(0,0):(80): userbuffer.v;
+		userbuffer::(0,0):(79): userbuffer.v;
+		userbuffer::(0,0):(78): userbuffer.v;
+		userbuffer::(0,0):(77): userbuffer.v;
 		readybox::(0,0):(75): readybox.v;
 		clockdivider::(0,0):(69): clockdivider.v
 		{

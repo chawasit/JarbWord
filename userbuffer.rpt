@@ -2,7 +2,7 @@ Project Information                             e:\finalproject\userbuffer.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 12/15/2016 00:35:09
+Compiled: 12/15/2016 04:37:09
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,19 +37,10 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 userbuffer
-      EPM7128SLC84-15      6        3        0      3       0           2  %
+      EPM7128SLC84-15      5        3        0      9       0           7  %
 
-User Pins:                 6        3        0  
+User Pins:                 5        3        0  
 
-
-
-Project Information                             e:\finalproject\userbuffer.rpt
-
-** AUTO GLOBAL SIGNALS **
-
-
-
-INFO: Signal 'clk' chosen for auto global Clock
 
 
 Device-Specific Information:                    e:\finalproject\userbuffer.rpt
@@ -72,15 +63,15 @@ Device Options:
                              R  R  R                    R  R  R     R  R     
                              E  E  E                    E  E  E     E  E     
                              S  S  S  V                 S  S  S     S  S     
-                             E  E  E  C                 E  E  E  V  E  E     
-                             R  R  R  C                 R  R  R  C  R  R     
-                          G  V  V  V  I  G  G  G  c  G  V  V  V  C  V  V     
-                          N  E  E  E  N  N  N  N  l  N  E  E  E  I  E  E  s  
-              d  c  b  a  D  D  D  D  T  D  D  D  k  D  D  D  D  O  D  D  1  
+              r              E  E  E  C                 E  E  E  V  E  E  p  
+              e              R  R  R  C                 R  R  R  C  R  R  r  
+              s           G  V  V  V  I  G  G  G  G  G  V  V  V  C  V  V  e  
+              e           N  E  E  E  N  N  N  N  N  N  E  E  E  I  E  E  s  
+              t  b  c  d  D  D  D  D  T  D  D  D  D  D  D  D  D  O  D  D  s  
             -----------------------------------------------------------------_ 
           /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
-   reset | 12                                                              74 | s0 
-   VCCIO | 13                                                              73 | press 
+       a | 12                                                              74 | s0 
+   VCCIO | 13                                                              73 | s1 
     #TDI | 14                                                              72 | GND 
 RESERVED | 15                                                              71 | #TDO 
 RESERVED | 16                                                              70 | RESERVED 
@@ -142,30 +133,30 @@ D:    LC49 - LC64     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%)
 E:    LC65 - LC80     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
 F:    LC81 - LC96     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
 G:   LC97 - LC112     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
-H:  LC113 - LC128     3/16( 18%)   3/ 8( 37%)   0/16(  0%)   8/36( 22%) 
+H:  LC113 - LC128     9/16( 56%)   3/ 8( 37%)   0/16(  0%)  11/36( 30%) 
 
 
-Total dedicated input pins used:                 1/4      ( 25%)
+Total dedicated input pins used:                 0/4      (  0%)
 Total I/O pins used:                            12/64     ( 18%)
-Total logic cells used:                          3/128    (  2%)
+Total logic cells used:                          9/128    (  7%)
 Total shareable expanders used:                  0/128    (  0%)
-Total Turbo logic cells used:                    3/128    (  2%)
+Total Turbo logic cells used:                    9/128    (  7%)
 Total shareable expanders not available (n/a):   0/128    (  0%)
-Average fan-in:                                  7.00
-Total fan-in:                                    21
+Average fan-in:                                  3.66
+Total fan-in:                                    33
 
-Total input pins required:                       6
+Total input pins required:                       5
 Total fast input logic cells required:           0
 Total output pins required:                      3
 Total bidirectional pins required:               0
 Total reserved pins required                     4
-Total logic cells required:                      3
-Total flipflops required:                        3
-Total product terms required:                    8
+Total logic cells required:                      9
+Total flipflops required:                        0
+Total product terms required:                   15
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
-Synthesized logic cells:                         0/ 128   (  0%)
+Synthesized logic cells:                         6/ 128   (  4%)
 
 
 
@@ -177,12 +168,11 @@ userbuffer
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   8   (11)  (A)      INPUT               0      0   0    0    0    3    0  a
-   9    (8)  (A)      INPUT               0      0   0    0    0    3    0  b
-  10    (6)  (A)      INPUT               0      0   0    0    0    3    0  c
-  83      -   -       INPUT  G            0      0   0    0    0    0    0  clk
-  11    (5)  (A)      INPUT               0      0   0    0    0    3    0  d
-  12    (3)  (A)      INPUT               0      0   0    0    0    3    0  reset
+  12    (3)  (A)      INPUT               0      0   0    0    0    3    3  a
+  10    (6)  (A)      INPUT               0      0   0    0    0    3    3  b
+   9    (8)  (A)      INPUT               0      0   0    0    0    1    3  c
+   8   (11)  (A)      INPUT               0      0   0    0    0    1    3  d
+  11    (5)  (A)      INPUT               0      0   0    0    0    1    3  reset
 
 
 Code:
@@ -193,11 +183,6 @@ t = Turbo logic cell
 / = Slow slew-rate output
 ! = NOT gate push-back
 r = Fitter-inserted logic cell
-G = Global Source. Fan-out destinations counted here do not include destinations
-that are driven using global routing resources. Refer to the Auto Global Signals,
-Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
-Sections of this Report File for information on which signals' fan-outs are used as
-Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
 Device-Specific Information:                    e:\finalproject\userbuffer.rpt
@@ -208,9 +193,35 @@ userbuffer
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  73    115    H         FF   +  t        0      0   0    5    1    1    0  press
-  74    117    H         FF   +  t        0      0   0    5    1    1    0  s0
-  75    118    H         FF   +  t        0      0   0    5    1    1    0  s1
+  75    118    H     OUTPUT      t        0      0   0    5    1    0    0  press
+  74    117    H     OUTPUT      t        0      0   0    2    1    0    0  s0
+  73    115    H     OUTPUT      t        0      0   0    2    1    0    0  s1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                    e:\finalproject\userbuffer.rpt
+userbuffer
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   -    114    H       SOFT    s t        0      0   0    3    1    1    1  ~28~1
+   -    116    H      LCELL    s t        0      0   0    2    1    0    1  ~32~1
+   -    119    H       SOFT    s t        0      0   0    3    1    1    1  ~44~1
+   -    113    H      LCELL    s t        0      0   0    2    1    0    1  ~48~1
+   -    121    H       SOFT    s t        0      0   0    3    1    0    1  ~60~1
+ (76)   120    H      LCELL    s t        0      0   0    2    1    1    1  ~64~1
 
 
 Code:
@@ -230,25 +241,33 @@ userbuffer
 
 Logic Array Block 'H':
 
-               Logic cells placed in LAB 'H'
-        +----- LC115 press
-        | +--- LC117 s0
-        | | +- LC118 s1
-        | | | 
-        | | |   Other LABs fed by signals
-        | | |   that feed LAB 'H'
-LC      | | | | A B C D E F G H |     Logic cells that feed LAB 'H':
-LC115-> * - - | - - - - - - - * | <-- press
-LC117-> - * - | - - - - - - - * | <-- s0
-LC118-> - - * | - - - - - - - * | <-- s1
+                           Logic cells placed in LAB 'H'
+        +----------------- LC118 press
+        | +--------------- LC117 s0
+        | | +------------- LC115 s1
+        | | | +----------- LC114 ~28~1
+        | | | | +--------- LC116 ~32~1
+        | | | | | +------- LC119 ~44~1
+        | | | | | | +----- LC113 ~48~1
+        | | | | | | | +--- LC121 ~60~1
+        | | | | | | | | +- LC120 ~64~1
+        | | | | | | | | | 
+        | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | |   that feed LAB 'H'
+LC      | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'H':
+LC114-> - * - - * - - - - | - - - - - - - * | <-- ~28~1
+LC116-> - - - * - - - - - | - - - - - - - * | <-- ~32~1
+LC119-> - - * - - - * - - | - - - - - - - * | <-- ~44~1
+LC113-> - - - - - * - - - | - - - - - - - * | <-- ~48~1
+LC121-> - - - - - - - - * | - - - - - - - * | <-- ~60~1
+LC120-> * - - - - - - * - | - - - - - - - * | <-- ~64~1
 
 Pin
-8    -> * * * | - - - - - - - * | <-- a
-9    -> * * * | - - - - - - - * | <-- b
-10   -> * * * | - - - - - - - * | <-- c
-83   -> - - - | - - - - - - - - | <-- clk
-11   -> * * * | - - - - - - - * | <-- d
-12   -> * * * | - - - - - - - * | <-- reset
+12   -> * * * - * - * - * | - - - - - - - * | <-- a
+10   -> * * * - * - * - * | - - - - - - - * | <-- b
+9    -> * - - * - * - * - | - - - - - - - * | <-- c
+8    -> * - - * - * - * - | - - - - - - - * | <-- d
+11   -> * - - * - * - * - | - - - - - - - * | <-- reset
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -263,29 +282,63 @@ userbuffer
 a        : INPUT;
 b        : INPUT;
 c        : INPUT;
-clk      : INPUT;
 d        : INPUT;
 reset    : INPUT;
 
--- Node name is 'press' = ':69' 
--- Equation name is 'press', type is output 
- press   = DFFE( _EQ001 $  VCC, GLOBAL( clk),  VCC,  VCC,  VCC);
-  _EQ001 =  a &  b &  c &  d & !reset
-         #  a &  b &  c &  d & !press;
+-- Node name is 'press' 
+-- Equation name is 'press', location is LC118, type is output.
+ press   = LCELL( _EQ001 $  VCC);
+  _EQ001 =  a &  b &  c &  d &  reset
+         #  a &  b &  c &  d & !_LC120;
 
--- Node name is 's0' = ':35' 
--- Equation name is 's0', type is output 
- s0      = DFFE( _EQ002 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
-  _EQ002 =  a &  b &  c &  d &  reset &  s0
-         #  a &  b &  c & !d
-         #  a & !b;
+-- Node name is 's0' 
+-- Equation name is 's0', location is LC117, type is output.
+ s0      = LCELL( _EQ002 $  a);
+  _EQ002 =  a &  b & !_LC114;
 
--- Node name is 's1' = ':52' 
--- Equation name is 's1', type is output 
- s1      = DFFE( _EQ003 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
-  _EQ003 =  a &  b &  c &  d &  reset &  s1
-         #  a &  b &  c & !d
-         #  a &  b & !c;
+-- Node name is 's1' 
+-- Equation name is 's1', location is LC115, type is output.
+ s1      = LCELL( _EQ003 $  GND);
+  _EQ003 =  a &  b &  _LC119;
+
+-- Node name is '~28~1' 
+-- Equation name is '~28~1', location is LC114, type is buried.
+-- synthesized logic cell 
+_LC114   = LCELL( _EQ004 $  GND);
+  _EQ004 =  c &  _LC116 & !reset
+         #  c & !d;
+
+-- Node name is '~32~1' 
+-- Equation name is '~32~1', location is LC116, type is buried.
+-- synthesized logic cell 
+_LC116   = LCELL( _EQ005 $  a);
+  _EQ005 =  a &  b & !_LC114;
+
+-- Node name is '~44~1' 
+-- Equation name is '~44~1', location is LC119, type is buried.
+-- synthesized logic cell 
+_LC119   = LCELL( _EQ006 $  VCC);
+  _EQ006 =  c &  d &  reset
+         #  c &  d & !_LC113;
+
+-- Node name is '~48~1' 
+-- Equation name is '~48~1', location is LC113, type is buried.
+-- synthesized logic cell 
+_LC113   = LCELL( _EQ007 $  GND);
+  _EQ007 =  a &  b &  _LC119;
+
+-- Node name is '~60~1' 
+-- Equation name is '~60~1', location is LC121, type is buried.
+-- synthesized logic cell 
+_LC121   = LCELL( _EQ008 $  VCC);
+  _EQ008 =  c &  d &  reset
+         #  c &  d & !_LC120;
+
+-- Node name is '~64~1' 
+-- Equation name is '~64~1', location is LC120, type is buried.
+-- synthesized logic cell 
+_LC120   = LCELL( _EQ009 $  VCC);
+  _EQ009 =  a &  b & !_LC121;
 
 
 
@@ -370,18 +423,18 @@ VHDL Netlist Writer                       = off
 Compilation Times
 -----------------
 
-   Compiler Netlist Extractor             00:00:00
+   Compiler Netlist Extractor             00:00:01
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
    Partitioner                            00:00:00
    Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
-   Assembler                              00:00:00
+   Assembler                              00:00:01
    --------------------------             --------
-   Total Time                             00:00:00
+   Total Time                             00:00:02
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 5,446K
+Peak memory allocated during compilation  = 12,637K

@@ -36,11 +36,11 @@ RESERVED                         : 4
 RESERVED                         : 5
 RESERVED                         : 6
 GND                              : 7
-a                                : 8
-b                                : 9
-c                                : 10
-d                                : 11
-reset                            : 12
+d                                : 8
+c                                : 9
+b                                : 10
+reset                            : 11
+a                                : 12
 VCCIO                            : 13
 TDI                              : 14
 RESERVED                         : 15
@@ -101,9 +101,9 @@ RESERVED                         : 69
 RESERVED                         : 70
 TDO                              : 71
 GND                              : 72
-press                            : 73
+s1                               : 73
 s0                               : 74
-s1                               : 75
+press                            : 75
 RESERVED                         : 76
 RESERVED                         : 77
 VCCIO                            : 78
@@ -111,5 +111,5 @@ RESERVED                         : 79
 RESERVED                         : 80
 RESERVED                         : 81
 GND                              : 82
-clk                              : 83
+GND                              : 83
 GND                              : 84

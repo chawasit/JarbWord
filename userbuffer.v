@@ -1,5 +1,5 @@
-module UserBuffer(s0, s1, press, a ,b, c ,d, reset, clk);
-	input a,b,c,d, reset, clk;
+module UserBuffer(s0, s1, press, a ,b, c ,d, reset);
+	input a,b,c,d, reset;
 	output s0, s1, press;
 	reg s0, s1, press;
 	wire pressin;

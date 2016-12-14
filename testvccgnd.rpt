@@ -2,7 +2,7 @@ Project Information                             e:\finalproject\testvccgnd.rpt
 
 MAX+plus II Compiler Report File
 Version 10.2 07/10/2002
-Compiled: 12/15/2016 04:31:54
+Compiled: 12/15/2016 04:53:52
 
 Copyright (C) 1988-2002 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,7 +37,7 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 testvccgnd
-      EPM7128SLC84-15      12       14       0      81      60          63 %
+      EPM7128SLC84-15      12       14       0      75      58          58 %
 
 User Pins:                 12       14       0  
 
@@ -92,8 +92,6 @@ Project Information                             e:\finalproject\testvccgnd.rpt
 
 
 
-|userbuffer:18|
-|userbuffer:20|
 |answercheck:21|
 |answercheck:22|
 |extractbox:30|
@@ -116,25 +114,6 @@ Project Information                             e:\finalproject\testvccgnd.rpt
 |statebox:60|lpm_add_sub:125|altshift:result_ext_latency_ffs|
 |statebox:60|lpm_add_sub:125|altshift:carry_ext_latency_ffs|
 |statebox:60|lpm_add_sub:125|altshift:oflow_ext_latency_ffs|
-|clockdivider:66|
-|clockdivider:66|t_ff:clkDiv1|
-|clockdivider:66|t_ff:clkDiv1|d_ff:d1|
-|clockdivider:66|t_ff:clkDiv2|
-|clockdivider:66|t_ff:clkDiv2|d_ff:d1|
-|clockdivider:66|t_ff:clkDiv3|
-|clockdivider:66|t_ff:clkDiv3|d_ff:d1|
-|clockdivider:66|t_ff:clkDiv4|
-|clockdivider:66|t_ff:clkDiv4|d_ff:d1|
-|clockdivider:66|t_ff:clkDiv5|
-|clockdivider:66|t_ff:clkDiv5|d_ff:d1|
-|clockdivider:66|t_ff:clkDiv6|
-|clockdivider:66|t_ff:clkDiv6|d_ff:d1|
-|clockdivider:66|t_ff:clkDiv7|
-|clockdivider:66|t_ff:clkDiv7|d_ff:d1|
-|clockdivider:66|t_ff:clkDiv8|
-|clockdivider:66|t_ff:clkDiv8|d_ff:d1|
-|clockdivider:66|t_ff:clkDiv9|
-|clockdivider:66|t_ff:clkDiv9|d_ff:d1|
 |clockdivider:69|
 |clockdivider:69|t_ff:clkDiv1|
 |clockdivider:69|t_ff:clkDiv1|d_ff:d1|
@@ -154,6 +133,27 @@ Project Information                             e:\finalproject\testvccgnd.rpt
 |clockdivider:69|t_ff:clkDiv8|d_ff:d1|
 |clockdivider:69|t_ff:clkDiv9|
 |clockdivider:69|t_ff:clkDiv9|d_ff:d1|
+|clockdivider:66|
+|clockdivider:66|t_ff:clkDiv1|
+|clockdivider:66|t_ff:clkDiv1|d_ff:d1|
+|clockdivider:66|t_ff:clkDiv2|
+|clockdivider:66|t_ff:clkDiv2|d_ff:d1|
+|clockdivider:66|t_ff:clkDiv3|
+|clockdivider:66|t_ff:clkDiv3|d_ff:d1|
+|clockdivider:66|t_ff:clkDiv4|
+|clockdivider:66|t_ff:clkDiv4|d_ff:d1|
+|clockdivider:66|t_ff:clkDiv5|
+|clockdivider:66|t_ff:clkDiv5|d_ff:d1|
+|clockdivider:66|t_ff:clkDiv6|
+|clockdivider:66|t_ff:clkDiv6|d_ff:d1|
+|clockdivider:66|t_ff:clkDiv7|
+|clockdivider:66|t_ff:clkDiv7|d_ff:d1|
+|clockdivider:66|t_ff:clkDiv8|
+|clockdivider:66|t_ff:clkDiv8|d_ff:d1|
+|clockdivider:66|t_ff:clkDiv9|
+|clockdivider:66|t_ff:clkDiv9|d_ff:d1|
+|userbuffer:78|
+|userbuffer:80|
 
 
 Device-Specific Information:                    e:\finalproject\testvccgnd.rpt
@@ -183,12 +183,12 @@ Device Options:
               0  D  D  D  D  D  D  D  T  D  D  D  k  D  D  D  D  O  D  D  D  
             -----------------------------------------------------------------_ 
           /  11 10  9  8  7  6  5  4  3  2  1 84 83 82 81 80 79 78 77 76 75   | 
- scoreA1 | 12                                                              74 | open 
+ scoreA1 | 12                                                              74 | RESERVED 
    VCCIO | 13                                                              73 | RESERVED 
     #TDI | 14                                                              72 | GND 
  scoreA2 | 15                                                              71 | #TDO 
  scoreB0 | 16                                                              70 | RESERVED 
- scoreB1 | 17                                                              69 | RESERVED 
+ scoreB1 | 17                                                              69 | open 
  scoreB2 | 18                                                              68 | led4 
      GND | 19                                                              67 | led3 
   round0 | 20                                                              66 | VCCIO 
@@ -239,37 +239,37 @@ testvccgnd
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     2/16( 12%)   2/ 8( 25%)   0/16(  0%)   4/36( 11%) 
-B:    LC17 - LC32    16/16(100%)   7/ 8( 87%)   9/16( 56%)  27/36( 75%) 
+A:     LC1 - LC16     3/16( 18%)   2/ 8( 25%)   2/16( 12%)   6/36( 16%) 
+B:    LC17 - LC32    16/16(100%)   7/ 8( 87%)  14/16( 87%)  28/36( 77%) 
 C:    LC33 - LC48     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
-D:    LC49 - LC64     2/16( 12%)   0/ 8(  0%)  11/16( 68%)   7/36( 19%) 
-E:    LC65 - LC80    13/16( 81%)   4/ 8( 50%)  16/16(100%)  19/36( 52%) 
-F:    LC81 - LC96    16/16(100%)   8/ 8(100%)  16/16(100%)  26/36( 72%) 
-G:   LC97 - LC112    16/16(100%)   6/ 8( 75%)  16/16(100%)  25/36( 69%) 
-H:  LC113 - LC128    16/16(100%)   1/ 8( 12%)  15/16( 93%)  26/36( 72%) 
+D:    LC49 - LC64     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
+E:    LC65 - LC80     8/16( 50%)   4/ 8( 50%)  13/16( 81%)  14/36( 38%) 
+F:    LC81 - LC96    16/16(100%)   8/ 8(100%)  16/16(100%)  29/36( 80%) 
+G:   LC97 - LC112    16/16(100%)   7/ 8( 87%)  15/16( 93%)  24/36( 66%) 
+H:  LC113 - LC128    16/16(100%)   0/ 8(  0%)  16/16(100%)  24/36( 66%) 
 
 
 Total dedicated input pins used:                 1/4      ( 25%)
 Total I/O pins used:                            29/64     ( 45%)
-Total logic cells used:                         81/128    ( 63%)
-Total shareable expanders used:                 60/128    ( 46%)
-Total Turbo logic cells used:                   81/128    ( 63%)
-Total shareable expanders not available (n/a):  23/128    ( 17%)
-Average fan-in:                                  5.40
-Total fan-in:                                   438
+Total logic cells used:                         75/128    ( 58%)
+Total shareable expanders used:                 58/128    ( 45%)
+Total Turbo logic cells used:                   75/128    ( 58%)
+Total shareable expanders not available (n/a):  18/128    ( 14%)
+Average fan-in:                                  5.24
+Total fan-in:                                   393
 
 Total input pins required:                      12
 Total fast input logic cells required:           0
 Total output pins required:                     14
 Total bidirectional pins required:               0
 Total reserved pins required                     4
-Total logic cells required:                     81
+Total logic cells required:                     75
 Total flipflops required:                       29
-Total product terms required:                  312
+Total product terms required:                  285
 Total logic cells lending parallel expanders:    0
-Total shareable expanders in database:          54
+Total shareable expanders in database:          56
 
-Synthesized logic cells:                        43/ 128   ( 33%)
+Synthesized logic cells:                        38/ 128   ( 29%)
 
 
 
@@ -286,8 +286,8 @@ testvccgnd
   55   (85)  (F)      INPUT               0      0   0    0    0    0    3  pa_b
   56   (86)  (F)      INPUT               0      0   0    0    0    0    3  pa_c
   57   (88)  (F)      INPUT               0      0   0    0    0    0    3  pa_d
-  49   (73)  (E)      INPUT               0      0   0    0    0    0   31  pattern0
-  50   (75)  (E)      INPUT               0      0   0    0    0    0   33  pattern1
+  49   (73)  (E)      INPUT               0      0   0    0    0    0   26  pattern0
+  50   (75)  (E)      INPUT               0      0   0    0    0    0   30  pattern1
   58   (91)  (F)      INPUT               0      0   0    0    0    0    3  pb_a
   60   (93)  (F)      INPUT               0      0   0    0    0    0    3  pb_b
   61   (94)  (F)      INPUT               0      0   0    0    0    0    3  pb_c
@@ -318,11 +318,11 @@ testvccgnd
   65    101    G     OUTPUT      t        0      0   0    0    3    0    0  led2
   67    104    G     OUTPUT      t        0      0   0    0    3    0    0  led3
   68    105    G     OUTPUT      t        0      0   0    0    3    0    0  led4
-  74    117    H     OUTPUT      t        0      0   0    0    0    0    0  open
-  20     21    B         FF      t        0      0   0    1    2    5   33  round0
-  21     19    B         FF      t        0      0   0    1    6    5   32  round1
-  11      5    A         FF      t        0      0   0    1    2    0    5  scoreA0
-  12      3    A         FF      t        0      0   0    1    2    0    4  scoreA1
+  69    107    G     OUTPUT      t        0      0   0    0    0    0    0  open
+  20     21    B         FF      t        0      0   0    1    5    6   26  round0
+  21     19    B         FF      t        0      0   0    1    6    5   27  round1
+  11      5    A         FF      t        0      0   0    1    2    0    4  scoreA0
+  12      3    A         FF      t        0      0   0    1    2    0    2  scoreA1
   15     29    B         FF      t        0      0   0    1    2    0    3  scoreA2
   16     27    B         FF      t        0      0   0    1    2    0    4  scoreB0
   17     25    B         FF      t        0      0   0    1    2    0    2  scoreB1
@@ -347,73 +347,67 @@ testvccgnd
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   -     98    G       SOFT    s t        0      0   0    2    4    0    3  |AnswerCheck:21|~153~1
- (49)    73    E       SOFT    s t        1      1   0    2    5    0    2  |AnswerCheck:21|~204~1
- (44)    65    E       SOFT    s t       10      4   1    2    4    0    1  |AnswerCheck:21|~210~1
- (36)    57    D       SOFT    s t       10      4   1    2    4    0    1  |AnswerCheck:21|~234~1
- (46)    69    E       SOFT    s t        5      1   0    2    8    0    1  |AnswerCheck:21|~253~1
- (71)   112    G       SOFT    s t        1      0   1    2    4    0    1  |AnswerCheck:21|~253~2
-   -     50    D       SOFT    s t        1      0   1    2    5    0    1  |AnswerCheck:21|~253~3
-   -     82    F       SOFT    s t        0      0   0    2    6    0    7  |AnswerCheck:21|~257~1
- (73)   115    H       SOFT    s t        0      0   0    2    4    0    7  |AnswerCheck:22|~153~1
-   -    113    H       SOFT    s t        1      1   0    2    5    0    6  |AnswerCheck:22|~204~1
-   -    103    G       SOFT    s t        5      1   1    2    6    0    1  |AnswerCheck:22|~210~1
- (69)   107    G       SOFT    s t        5      1   1    2    6    0    1  |AnswerCheck:22|~234~1
-   -    108    G       SOFT    s t        5      1   0    2    8    0    1  |AnswerCheck:22|~253~1
- (63)    97    G       SOFT    s t        1      0   1    2    4    0    1  |AnswerCheck:22|~253~2
- (77)   123    H       SOFT    s t        1      0   1    2    5    0    1  |AnswerCheck:22|~253~3
-   -    119    H       SOFT    s t        0      0   0    2    6    0    5  |AnswerCheck:22|~257~1
-   -     31    B       TFFE      t        2      0   0    2    1    0    1  |ClockDivider:66|T_FF:clkDiv1|D_FF:d1|:6
- (55)    85    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv2|D_FF:d1|:6
-   -     84    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv3|D_FF:d1|:6
- (56)    86    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv4|D_FF:d1|:6
-   -     87    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv5|D_FF:d1|:6
- (61)    94    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv6|D_FF:d1|:6
-   -     95    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv7|D_FF:d1|:6
- (57)    88    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv8|D_FF:d1|:6
-   -     70    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv9|D_FF:d1|:6
- (62)    96    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv1|D_FF:d1|:6
-   -     71    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv2|D_FF:d1|:6
- (48)    72    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv3|D_FF:d1|:6
- (51)    77    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv4|D_FF:d1|:6
-   -     78    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv5|D_FF:d1|:6
-   -     66    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv6|D_FF:d1|:6
- (45)    67    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv7|D_FF:d1|:6
-   -     74    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv8|D_FF:d1|:6
-   -     79    E       TFFE      t        0      0   0    0    1    8    3  |ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6
-   -     30    B       SOFT      t        0      0   0    0    2    0    1  |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node1
- (14)    32    B       SOFT      t        0      0   0    0    3    0    1  |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node2
- (75)   118    H       SOFT      t        0      0   0    0    3    0    1  |StateBox:60|lpm_add_sub:124|addcore:adder|addcore:adder0|result_node2
- (22)    17    B       DFFE      t        0      0   0    1    4    1   14  |StateBox:60|visit (|StateBox:60|:26)
-   -     20    B       DFFE      t        0      0   0    1    5    0    7  |StateBox:60|:34
-   -     92    F       SOFT    s t        3      2   1    2    7    0    1  |StateBox:60|~39~1
- (54)    83    F       SOFT    s t        3      2   1    2    7    0    3  |StateBox:60|~40~1
-   -     81    F       SOFT    s t        3      2   1    2    7    0    2  |StateBox:60|~41~1
- (60)    93    F       SOFT    s t        1      0   1    2    5    0    3  |StateBox:60|~41~2
- (58)    91    F       SOFT    s t        3      0   1    2    8    0    1  |StateBox:60|~43~1
-   -     90    F       SOFT    s t        6      0   1    2    8    0    1  |StateBox:60|~48~1
-   -     89    F       SOFT    s t        1      0   1    2    5    0    1  |StateBox:60|~48~2
-   -    121    H       SOFT    s t        0      0   0    0    6    1    0  |StateBox:60|~56~1
-   -     23    B       SOFT    s t        4      0   1    2   11    1    0  |StateBox:60|~57~1
-   -     22    B       SOFT    s t        1      0   1    2    8    0    1  |StateBox:60|~57~2
-   -     18    B       SOFT    s t        1      0   1    2   10    0    1  |StateBox:60|~57~3
-   -     28    B       SOFT    s t        1      0   0    0    5    1    0  |StateBox:60|~58~1
- (81)   128    H       SOFT    s t        3      0   1    2    7    0    1  |StateBox:60|~72~1
-   -    127    H       SOFT    s t        1      0   1    2    5    0    1  |StateBox:60|~72~2
- (80)   126    H       SOFT    s t        3      0   1    2    8    0    1  |StateBox:60|~76~1
- (79)   125    H       SOFT    s t        0      0   0    0    6    1    0  |StateBox:60|~89~1
+   -    116    H       SOFT    s t        0      0   0    2    4    0    6  |AnswerCheck:21|~153~1
+   -    106    G       SOFT    s t        1      1   0    2    5    0    5  |AnswerCheck:21|~204~1
+   -    108    G       SOFT    s t        5      0   1    2    6    0    1  |AnswerCheck:21|~210~1
+   -     70    E       SOFT    s t        5      0   1    2    5    0    1  |AnswerCheck:21|~234~1
+   -    122    H       SOFT    s t        1      0   1    2    3    0    1  |AnswerCheck:21|~234~2
+   -     22    B       SOFT    s t        5      1   0    2    8    0    1  |AnswerCheck:21|~253~1
+ (80)   126    H       SOFT    s t        1      0   1    2    4    0    1  |AnswerCheck:21|~253~2
+   -    100    G       SOFT    s t        1      0   1    2    5    0    1  |AnswerCheck:21|~253~3
+ (56)    86    F       SOFT    s t        0      0   0    2    6    0    4  |AnswerCheck:21|~257~1
+   -    114    H       SOFT    s t        0      0   0    2    4    0    4  |AnswerCheck:22|~153~1
+   -    127    H       SOFT    s t        2      1   0    2    4    0    4  |AnswerCheck:22|~204~1
+ (54)    83    F       SOFT    s t       10      4   1    2    4    0    1  |AnswerCheck:22|~210~1
+ (55)    85    F       SOFT    s t       10      4   1    2    4    0    1  |AnswerCheck:22|~234~1
+   -    111    G       SOFT    s t        5      1   0    2    8    0    1  |AnswerCheck:22|~253~1
+ (81)   128    H       SOFT    s t        1      0   1    2    4    0    1  |AnswerCheck:22|~253~2
+   -    119    H       SOFT    s t        1      0   1    2    5    0    1  |AnswerCheck:22|~253~3
+ (60)    93    F       SOFT    s t        0      0   0    2    6    0    5  |AnswerCheck:22|~257~1
+   -      9    A       TFFE      t        2      0   0    2    1    0    1  |ClockDivider:66|T_FF:clkDiv1|D_FF:d1|:6
+ (57)    88    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv2|D_FF:d1|:6
+   -     95    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv3|D_FF:d1|:6
+ (61)    94    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv4|D_FF:d1|:6
+ (62)    96    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv5|D_FF:d1|:6
+   -     84    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv6|D_FF:d1|:6
+   -    102    G       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv7|D_FF:d1|:6
+   -     87    F       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv8|D_FF:d1|:6
+ (70)   109    G       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:66|T_FF:clkDiv9|D_FF:d1|:6
+ (71)   112    G       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv1|D_FF:d1|:6
+   -     98    G       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv2|D_FF:d1|:6
+   -    103    G       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv3|D_FF:d1|:6
+ (45)    67    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv4|D_FF:d1|:6
+   -    110    G       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv5|D_FF:d1|:6
+ (46)    69    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv6|D_FF:d1|:6
+ (48)    72    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv7|D_FF:d1|:6
+   -     79    E       TFFE      t        0      0   0    0    1    0    1  |ClockDivider:69|T_FF:clkDiv8|D_FF:d1|:6
+ (44)    65    E       TFFE      t        0      0   0    0    1    8    3  |ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6
+   -     18    B       SOFT      t        0      0   0    0    3    0    1  |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node2
+ (79)   125    H       SOFT      t        0      0   0    0    3    0    1  |StateBox:60|lpm_add_sub:124|addcore:adder|addcore:adder0|result_node2
+   -     20    B       DFFE      t        0      0   0    1    4    2   13  |StateBox:60|visit (|StateBox:60|:26)
+ (22)    17    B       DFFE      t        0      0   0    1    5    0    7  |StateBox:60|:34
+ (51)    77    E       SOFT    s t        8      0   1    2    6    0    1  |StateBox:60|~39~1
+ (14)    32    B       SOFT    s t        3      0   1    2    8    0    1  |StateBox:60|~43~1
+ (73)   115    H       SOFT    s t        0      0   0    0    6    1    0  |StateBox:60|~56~1
+   -     23    B       SOFT    s t        2      0   0    1    8    1    0  |StateBox:60|~57~1
+   -     26    B       SOFT    s t        1      0   1    2    9    0    1  |StateBox:60|~57~2
+   -     28    B       SOFT    s t        2      0   0    1    7    1    0  |StateBox:60|~58~1
+   -     31    B       SOFT    s t        1      0   1    2    8    0    1  |StateBox:60|~58~2
+ (63)    97    G       SOFT    s t        3      0   1    2    7    0    1  |StateBox:60|~72~1
+ (75)   118    H       SOFT    s t        1      0   1    2    5    0    1  |StateBox:60|~72~2
+ (76)   120    H       SOFT    s t        3      0   1    2    8    0    1  |StateBox:60|~76~1
+   -    121    H       SOFT    s t        0      0   0    0    6    1    0  |StateBox:60|~89~1
    -    124    H       SOFT    s t        2      0   0    1    8    1    0  |StateBox:60|~90~1
-   -    122    H       SOFT    s t        1      0   1    2    9    0    1  |StateBox:60|~90~2
- (76)   120    H       SOFT    s t        2      0   0    1    7    1    0  |StateBox:60|~91~1
-   -    116    H       SOFT    s t        1      0   1    2    8    0    1  |StateBox:60|~91~2
-   -    114    H       SOFT    s t        0      0   0    0    4    1    0  |StateBox:60|~113~1
-   -     26    B       TFFE      t        0      0   0    1    7    4    2  |StateBox:60|:120
-   -    102    G      LCELL    s t        0      0   0    4    2    0   19  |UserBuffer:18|~33~1
- (70)   109    G      LCELL    s t        0      0   0    4    2    0   19  |UserBuffer:18|~49~1
-   -    110    G      LCELL    s t        0      0   0    4    2    1   15  |UserBuffer:18|~65~1
-   -    100    G      LCELL    s t        0      0   0    4    2    0   14  |UserBuffer:20|~33~1
-   -    106    G      LCELL    s t        0      0   0    4    2    0   14  |UserBuffer:20|~49~1
-   -    111    G      LCELL    s t        0      0   0    4    2    1   15  |UserBuffer:20|~65~1
+ (74)   117    H       SOFT    s t        1      0   1    2    9    0    1  |StateBox:60|~90~2
+ (77)   123    H       SOFT    s t        2      0   0    1    7    1    0  |StateBox:60|~91~1
+   -    113    H       SOFT    s t        1      0   1    2    8    0    1  |StateBox:60|~91~2
+   -     30    B       TFFE      t        0      0   0    1    7    4    2  |StateBox:60|:120
+   -     89    F      LCELL    s t        0      0   0    4    2    0   14  |UserBuffer:78|~32~1
+   -     82    F      LCELL    s t        0      0   0    4    2    0   14  |UserBuffer:78|~48~1
+   -     90    F      LCELL    s t        0      0   0    4    2    2   14  |UserBuffer:78|~64~1
+   -     92    F      LCELL    s t        0      0   0    4    2    0   14  |UserBuffer:80|~32~1
+   -     81    F      LCELL    s t        0      0   0    4    2    0   14  |UserBuffer:80|~48~1
+ (58)    91    F      LCELL    s t        0      0   0    4    2    2   14  |UserBuffer:80|~64~1
 
 
 Code:
@@ -433,20 +427,22 @@ testvccgnd
 
 Logic Array Block 'A':
 
-             Logic cells placed in LAB 'A'
-        +--- LC5 scoreA0
-        | +- LC3 scoreA1
-        | | 
-        | |   Other LABs fed by signals
-        | |   that feed LAB 'A'
-LC      | | | A B C D E F G H |     Logic cells that feed LAB 'A':
+               Logic cells placed in LAB 'A'
+        +----- LC9 |ClockDivider:66|T_FF:clkDiv1|D_FF:d1|:6
+        | +--- LC5 scoreA0
+        | | +- LC3 scoreA1
+        | | | 
+        | | |   Other LABs fed by signals
+        | | |   that feed LAB 'A'
+LC      | | | | A B C D E F G H |     Logic cells that feed LAB 'A':
 
 Pin
-83   -> - - | - * - - - - - - | <-- clk
-51   -> * * | * * - - - - - - | <-- reset
-LC79 -> * * | * * - - - - - - | <-- |ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6
-LC23 -> - * | * - - - - - - - | <-- |StateBox:60|~57~1
-LC28 -> * - | * - - - - - - - | <-- |StateBox:60|~58~1
+83   -> * - - | * - - - - - - - | <-- clk
+51   -> * * * | * * - - - - - - | <-- reset
+LC65 -> - * * | * * - - - - - - | <-- |ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6
+LC23 -> - - * | * - - - - - - - | <-- |StateBox:60|~57~1
+LC28 -> - * - | * - - - - - - - | <-- |StateBox:60|~58~1
+LC30 -> * - - | * * - - - - * - | <-- |StateBox:60|:120
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -461,85 +457,57 @@ testvccgnd
 Logic Array Block 'B':
 
                                          Logic cells placed in LAB 'B'
-        +------------------------------- LC31 |ClockDivider:66|T_FF:clkDiv1|D_FF:d1|:6
+        +------------------------------- LC22 |AnswerCheck:21|~253~1
         | +----------------------------- LC21 round0
         | | +--------------------------- LC19 round1
         | | | +------------------------- LC29 scoreA2
         | | | | +----------------------- LC27 scoreB0
         | | | | | +--------------------- LC25 scoreB1
         | | | | | | +------------------- LC24 scoreB2
-        | | | | | | | +----------------- LC30 |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node1
-        | | | | | | | | +--------------- LC32 |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node2
-        | | | | | | | | | +------------- LC17 |StateBox:60|visit
-        | | | | | | | | | | +----------- LC20 |StateBox:60|:34
+        | | | | | | | +----------------- LC18 |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node2
+        | | | | | | | | +--------------- LC20 |StateBox:60|visit
+        | | | | | | | | | +------------- LC17 |StateBox:60|:34
+        | | | | | | | | | | +----------- LC32 |StateBox:60|~43~1
         | | | | | | | | | | | +--------- LC23 |StateBox:60|~57~1
-        | | | | | | | | | | | | +------- LC22 |StateBox:60|~57~2
-        | | | | | | | | | | | | | +----- LC18 |StateBox:60|~57~3
-        | | | | | | | | | | | | | | +--- LC28 |StateBox:60|~58~1
-        | | | | | | | | | | | | | | | +- LC26 |StateBox:60|:120
+        | | | | | | | | | | | | +------- LC26 |StateBox:60|~57~2
+        | | | | | | | | | | | | | +----- LC28 |StateBox:60|~58~1
+        | | | | | | | | | | | | | | +--- LC31 |StateBox:60|~58~2
+        | | | | | | | | | | | | | | | +- LC30 |StateBox:60|:120
         | | | | | | | | | | | | | | | | 
         | | | | | | | | | | | | | | | |   Other LABs fed by signals
         | | | | | | | | | | | | | | | |   that feed LAB 'B'
 LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'B':
-LC21 -> - - * - - - - - - - - * * * - * | - * - * * * * * | <-- round0
-LC19 -> - - * - - - - - - - - * * * - * | - * - * * * * * | <-- round1
-LC29 -> - - - - - - - - * - - - - - - - | - * - - - * - * | <-- scoreA2
-LC17 -> - - * - - - - - - * * * * * * * | - * - - - - - * | <-- |StateBox:60|visit
-LC20 -> - - - - - - - - - - * - - - - - | - * - - - - * - | <-- |StateBox:60|:34
-LC22 -> - - - - - - - - - - - * - - - - | - * - - - - - - | <-- |StateBox:60|~57~2
-LC18 -> - - - - - - - - - - - * - - - - | - * - - - - - - | <-- |StateBox:60|~57~3
-LC26 -> * - - - - - - - - - - - - - - * | - * - - - - * - | <-- |StateBox:60|:120
+LC21 -> * * * - - - - - - - * - * - * * | - * - - * * * * | <-- round0
+LC19 -> * - * - - - - - - - * - * - * * | - * - - * * * * | <-- round1
+LC29 -> - - - - - - - * - - * - - - - - | - * - - - - - * | <-- scoreA2
+LC20 -> - * * - - - - - * * - * * * * * | - * - - - - - * | <-- |StateBox:60|visit
+LC17 -> - - - - - - - - - * - - - - - - | - * - - - * - - | <-- |StateBox:60|:34
+LC26 -> - - - - - - - - - - - * - - - - | - * - - - - - - | <-- |StateBox:60|~57~2
+LC31 -> - - - - - - - - - - - - - * - - | - * - - - - - - | <-- |StateBox:60|~58~2
+LC30 -> - - - - - - - - - - - - - - - * | * * - - - - * - | <-- |StateBox:60|:120
 
 Pin
-83   -> * - - - - - - - - - - - - - - - | - * - - - - - - | <-- clk
-49   -> - - - - - - - - - - - * * * - - | - * - * * * * * | <-- pattern0
-50   -> - - - - - - - - - - - * * * - - | - * - * * * * * | <-- pattern1
-51   -> * * * * * * * - - * * - - - - * | * * - - - - - - | <-- reset
-LC82 -> - - - - - - - - - - - - - * - - | - * - - - * - - | <-- |AnswerCheck:21|~257~1
-LC79 -> - * * * * * * - - * * - - - - * | * * - - - - - - | <-- |ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6
-LC5  -> - - - - - - - * * - - - - - * - | - * - - - * - - | <-- scoreA0
-LC3  -> - - - - - - - * * - - * - * - - | - * - - - - - - | <-- scoreA1
-LC83 -> - - - - - - - - - - - * * * - - | - * - - - - - - | <-- |StateBox:60|~40~1
-LC90 -> - - - - - - - - - - - - - - * - | - * - - - - - - | <-- |StateBox:60|~48~1
-LC121-> - - - * - - - - - - - - - - - - | - * - - - - - - | <-- |StateBox:60|~56~1
-LC125-> - - - - - - * - - - - - - - - - | - * - - - - - - | <-- |StateBox:60|~89~1
+83   -> - - - - - - - - - - - - - - - - | * - - - - - - - | <-- clk
+49   -> * - - - - - - - - - * - * - * - | - * - - * * * * | <-- pattern0
+50   -> * - - - - - - - - - * * * * * - | - * - - * * * * | <-- pattern1
+51   -> - * * * * * * - * * - - - - - * | * * - - - - - - | <-- reset
+LC116-> * - - - - - - - - - * * - * - - | - * - - - - * - | <-- |AnswerCheck:21|~153~1
+LC106-> - - - - - - - - - - * - * - * - | - * - - - - * - | <-- |AnswerCheck:21|~204~1
+LC70 -> * - - - - - - - - - - - - - - - | - * - - - - - - | <-- |AnswerCheck:21|~234~1
+LC126-> * - - - - - - - - - - - - - - - | - * - - - - - - | <-- |AnswerCheck:21|~253~2
+LC100-> * - - - - - - - - - - - - - - - | - * - - - - - - | <-- |AnswerCheck:21|~253~3
+LC86 -> - - - - - - - - - - * * - * - - | - * - - * - - - | <-- |AnswerCheck:21|~257~1
+LC65 -> - * * * * * * - * * - - - - - * | * * - - - - - - | <-- |ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6
+LC5  -> - - - - - - - * - - - * * * - - | - * - - - - - - | <-- scoreA0
+LC3  -> - - - - - - - * - - - * - - - - | - * - - - - - - | <-- scoreA1
+LC115-> - - - * - - - - - - - - - - - - | - * - - - - - - | <-- |StateBox:60|~56~1
+LC121-> - - - - - - * - - - - - - - - - | - * - - - - - - | <-- |StateBox:60|~89~1
 LC124-> - - - - - * - - - - - - - - - - | - * - - - - - - | <-- |StateBox:60|~90~1
-LC120-> - - - - * - - - - - - - - - - - | - * - - - - - - | <-- |StateBox:60|~91~1
-LC114-> - * - - - - - - - - - - - - - - | - * - - - - - - | <-- |StateBox:60|~113~1
-LC102-> - - - - - - - - - - - * * * - - | - * - * * * * - | <-- |UserBuffer:18|~33~1
-LC109-> - - - - - - - - - - - * * * - - | - * - * * * * - | <-- |UserBuffer:18|~49~1
-LC110-> - - * - - - - - - * * * * * * * | - * - - - - * * | <-- |UserBuffer:18|~65~1
-LC111-> - - * - - - - - - * * * * * * * | - * - - - - * * | <-- |UserBuffer:20|~65~1
-
-
-* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
-- = The logic cell or pin is not an input to the logic cell (or LAB).
-
-
-Device-Specific Information:                    e:\finalproject\testvccgnd.rpt
-testvccgnd
-
-** LOGIC CELL INTERCONNECTIONS **
-
-Logic Array Block 'D':
-
-             Logic cells placed in LAB 'D'
-        +--- LC57 |AnswerCheck:21|~234~1
-        | +- LC50 |AnswerCheck:21|~253~3
-        | | 
-        | |   Other LABs fed by signals
-        | |   that feed LAB 'D'
-LC      | | | A B C D E F G H |     Logic cells that feed LAB 'D':
-
-Pin
-83   -> - - | - * - - - - - - | <-- clk
-49   -> * * | - * - * * * * * | <-- pattern0
-50   -> * * | - * - * * * * * | <-- pattern1
-LC73 -> - * | - - - * - * - - | <-- |AnswerCheck:21|~204~1
-LC21 -> * * | - * - * * * * * | <-- round0
-LC19 -> * * | - * - * * * * * | <-- round1
-LC102-> * * | - * - * * * * - | <-- |UserBuffer:18|~33~1
-LC109-> * * | - * - * * * * - | <-- |UserBuffer:18|~49~1
+LC123-> - - - - * - - - - - - - - - - - | - * - - - - - - | <-- |StateBox:60|~91~1
+LC89 -> * - - - - - - - - - * - * - * - | - * - - * * * * | <-- |UserBuffer:78|~32~1
+LC82 -> * - - - - - - - - - * - * - * - | - * - - * * * * | <-- |UserBuffer:78|~48~1
+LC90 -> - * * - - - - - * * - * * * * * | - * - - - * - * | <-- |UserBuffer:78|~64~1
+LC91 -> - * * - - - - - * * - * * * * * | - * - - - * - * | <-- |UserBuffer:80|~64~1
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -553,46 +521,36 @@ testvccgnd
 
 Logic Array Block 'E':
 
-                                   Logic cells placed in LAB 'E'
-        +------------------------- LC73 |AnswerCheck:21|~204~1
-        | +----------------------- LC65 |AnswerCheck:21|~210~1
-        | | +--------------------- LC69 |AnswerCheck:21|~253~1
-        | | | +------------------- LC70 |ClockDivider:66|T_FF:clkDiv9|D_FF:d1|:6
-        | | | | +----------------- LC71 |ClockDivider:69|T_FF:clkDiv2|D_FF:d1|:6
-        | | | | | +--------------- LC72 |ClockDivider:69|T_FF:clkDiv3|D_FF:d1|:6
-        | | | | | | +------------- LC77 |ClockDivider:69|T_FF:clkDiv4|D_FF:d1|:6
-        | | | | | | | +----------- LC78 |ClockDivider:69|T_FF:clkDiv5|D_FF:d1|:6
-        | | | | | | | | +--------- LC66 |ClockDivider:69|T_FF:clkDiv6|D_FF:d1|:6
-        | | | | | | | | | +------- LC67 |ClockDivider:69|T_FF:clkDiv7|D_FF:d1|:6
-        | | | | | | | | | | +----- LC74 |ClockDivider:69|T_FF:clkDiv8|D_FF:d1|:6
-        | | | | | | | | | | | +--- LC79 |ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6
-        | | | | | | | | | | | | +- LC80 close
-        | | | | | | | | | | | | | 
-        | | | | | | | | | | | | |   Other LABs fed by signals
-        | | | | | | | | | | | | |   that feed LAB 'E'
-LC      | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'E':
-LC71 -> - - - - * * - - - - - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv2|D_FF:d1|:6
-LC72 -> - - - - - * * - - - - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv3|D_FF:d1|:6
-LC77 -> - - - - - - * * - - - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv4|D_FF:d1|:6
-LC78 -> - - - - - - - * * - - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv5|D_FF:d1|:6
-LC66 -> - - - - - - - - * * - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv6|D_FF:d1|:6
-LC67 -> - - - - - - - - - * * - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv7|D_FF:d1|:6
-LC74 -> - - - - - - - - - - * * - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv8|D_FF:d1|:6
+                         Logic cells placed in LAB 'E'
+        +--------------- LC70 |AnswerCheck:21|~234~1
+        | +------------- LC67 |ClockDivider:69|T_FF:clkDiv4|D_FF:d1|:6
+        | | +----------- LC69 |ClockDivider:69|T_FF:clkDiv6|D_FF:d1|:6
+        | | | +--------- LC72 |ClockDivider:69|T_FF:clkDiv7|D_FF:d1|:6
+        | | | | +------- LC79 |ClockDivider:69|T_FF:clkDiv8|D_FF:d1|:6
+        | | | | | +----- LC65 |ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6
+        | | | | | | +--- LC80 close
+        | | | | | | | +- LC77 |StateBox:60|~39~1
+        | | | | | | | | 
+        | | | | | | | |   Other LABs fed by signals
+        | | | | | | | |   that feed LAB 'E'
+LC      | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'E':
+LC69 -> - - * * - - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv6|D_FF:d1|:6
+LC72 -> - - - * * - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv7|D_FF:d1|:6
+LC79 -> - - - - * * - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv8|D_FF:d1|:6
 
 Pin
-83   -> - - - - - - - - - - - - - | - * - - - - - - | <-- clk
-49   -> * * * - - - - - - - - - - | - * - * * * * * | <-- pattern0
-50   -> * * * - - - - - - - - - - | - * - * * * * * | <-- pattern1
-LC98 -> * - * - - - - - - - - - - | - - - - * * - - | <-- |AnswerCheck:21|~153~1
-LC57 -> - - * - - - - - - - - - - | - - - - * - - - | <-- |AnswerCheck:21|~234~1
-LC112-> - - * - - - - - - - - - - | - - - - * - - - | <-- |AnswerCheck:21|~253~2
-LC50 -> - - * - - - - - - - - - - | - - - - * - - - | <-- |AnswerCheck:21|~253~3
-LC88 -> - - - * - - - - - - - - - | - - - - * - - - | <-- |ClockDivider:66|T_FF:clkDiv8|D_FF:d1|:6
-LC96 -> - - - - * - - - - - - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv1|D_FF:d1|:6
-LC21 -> * * * - - - - - - - - - - | - * - * * * * * | <-- round0
-LC19 -> * * * - - - - - - - - - - | - * - * * * * * | <-- round1
-LC102-> * * * - - - - - - - - - - | - * - * * * * - | <-- |UserBuffer:18|~33~1
-LC109-> * * * - - - - - - - - - - | - * - * * * * - | <-- |UserBuffer:18|~49~1
+83   -> - - - - - - - - | * - - - - - - - | <-- clk
+49   -> * - - - - - - * | - * - - * * * * | <-- pattern0
+50   -> * - - - - - - * | - * - - * * * * | <-- pattern1
+LC122-> * - - - - - - - | - - - - * - - - | <-- |AnswerCheck:21|~234~2
+LC86 -> - - - - - - - * | - * - - * - - - | <-- |AnswerCheck:21|~257~1
+LC103-> - * - - - - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv3|D_FF:d1|:6
+LC110-> - - * - - - - - | - - - - * - - - | <-- |ClockDivider:69|T_FF:clkDiv5|D_FF:d1|:6
+LC21 -> * - - - - - - * | - * - - * * * * | <-- round0
+LC19 -> * - - - - - - * | - * - - * * * * | <-- round1
+LC18 -> - - - - - - - * | - - - - * - - - | <-- |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node2
+LC89 -> * - - - - - - * | - * - - * * * * | <-- |UserBuffer:78|~32~1
+LC82 -> * - - - - - - * | - * - - * * * * | <-- |UserBuffer:78|~48~1
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -607,55 +565,58 @@ testvccgnd
 Logic Array Block 'F':
 
                                          Logic cells placed in LAB 'F'
-        +------------------------------- LC82 |AnswerCheck:21|~257~1
-        | +----------------------------- LC85 |ClockDivider:66|T_FF:clkDiv2|D_FF:d1|:6
-        | | +--------------------------- LC84 |ClockDivider:66|T_FF:clkDiv3|D_FF:d1|:6
-        | | | +------------------------- LC86 |ClockDivider:66|T_FF:clkDiv4|D_FF:d1|:6
-        | | | | +----------------------- LC87 |ClockDivider:66|T_FF:clkDiv5|D_FF:d1|:6
-        | | | | | +--------------------- LC94 |ClockDivider:66|T_FF:clkDiv6|D_FF:d1|:6
-        | | | | | | +------------------- LC95 |ClockDivider:66|T_FF:clkDiv7|D_FF:d1|:6
-        | | | | | | | +----------------- LC88 |ClockDivider:66|T_FF:clkDiv8|D_FF:d1|:6
-        | | | | | | | | +--------------- LC96 |ClockDivider:69|T_FF:clkDiv1|D_FF:d1|:6
-        | | | | | | | | | +------------- LC92 |StateBox:60|~39~1
-        | | | | | | | | | | +----------- LC83 |StateBox:60|~40~1
-        | | | | | | | | | | | +--------- LC81 |StateBox:60|~41~1
-        | | | | | | | | | | | | +------- LC93 |StateBox:60|~41~2
-        | | | | | | | | | | | | | +----- LC91 |StateBox:60|~43~1
-        | | | | | | | | | | | | | | +--- LC90 |StateBox:60|~48~1
-        | | | | | | | | | | | | | | | +- LC89 |StateBox:60|~48~2
+        +------------------------------- LC86 |AnswerCheck:21|~257~1
+        | +----------------------------- LC83 |AnswerCheck:22|~210~1
+        | | +--------------------------- LC85 |AnswerCheck:22|~234~1
+        | | | +------------------------- LC93 |AnswerCheck:22|~257~1
+        | | | | +----------------------- LC88 |ClockDivider:66|T_FF:clkDiv2|D_FF:d1|:6
+        | | | | | +--------------------- LC95 |ClockDivider:66|T_FF:clkDiv3|D_FF:d1|:6
+        | | | | | | +------------------- LC94 |ClockDivider:66|T_FF:clkDiv4|D_FF:d1|:6
+        | | | | | | | +----------------- LC96 |ClockDivider:66|T_FF:clkDiv5|D_FF:d1|:6
+        | | | | | | | | +--------------- LC84 |ClockDivider:66|T_FF:clkDiv6|D_FF:d1|:6
+        | | | | | | | | | +------------- LC87 |ClockDivider:66|T_FF:clkDiv8|D_FF:d1|:6
+        | | | | | | | | | | +----------- LC89 |UserBuffer:78|~32~1
+        | | | | | | | | | | | +--------- LC82 |UserBuffer:78|~48~1
+        | | | | | | | | | | | | +------- LC90 |UserBuffer:78|~64~1
+        | | | | | | | | | | | | | +----- LC92 |UserBuffer:80|~32~1
+        | | | | | | | | | | | | | | +--- LC81 |UserBuffer:80|~48~1
+        | | | | | | | | | | | | | | | +- LC91 |UserBuffer:80|~64~1
         | | | | | | | | | | | | | | | | 
         | | | | | | | | | | | | | | | |   Other LABs fed by signals
         | | | | | | | | | | | | | | | |   that feed LAB 'F'
 LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'F':
-LC82 -> - - - - - - - - - * * * * * * - | - * - - - * - - | <-- |AnswerCheck:21|~257~1
-LC85 -> - * * - - - - - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv2|D_FF:d1|:6
-LC84 -> - - * * - - - - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv3|D_FF:d1|:6
-LC86 -> - - - * * - - - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv4|D_FF:d1|:6
-LC87 -> - - - - * * - - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv5|D_FF:d1|:6
-LC94 -> - - - - - * * - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv6|D_FF:d1|:6
-LC95 -> - - - - - - * * - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv7|D_FF:d1|:6
-LC81 -> - - - - - - - - - - - - - - * * | - - - - - * - - | <-- |StateBox:60|~41~1
-LC93 -> - - - - - - - - - * * * - - - - | - - - - - * - - | <-- |StateBox:60|~41~2
-LC89 -> - - - - - - - - - - - - - - * - | - - - - - * - - | <-- |StateBox:60|~48~2
+LC83 -> - - - * - - - - - - - - - - - - | - - - - - * - - | <-- |AnswerCheck:22|~210~1
+LC88 -> - - - - * * - - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv2|D_FF:d1|:6
+LC95 -> - - - - - * * - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv3|D_FF:d1|:6
+LC94 -> - - - - - - * * - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv4|D_FF:d1|:6
+LC96 -> - - - - - - - * * - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv5|D_FF:d1|:6
+LC89 -> * - - - - - - - - - * - - - - - | - * - - * * * * | <-- |UserBuffer:78|~32~1
+LC82 -> * - - - - - - - - - - * - - - - | - * - - * * * * | <-- |UserBuffer:78|~48~1
+LC90 -> - - - - - - - - - - - - * - - - | - * - - - * - * | <-- |UserBuffer:78|~64~1
+LC92 -> - * * * - - - - - - - - - * - - | - - - - - * * * | <-- |UserBuffer:80|~32~1
+LC81 -> - * * * - - - - - - - - - - * - | - - - - - * * * | <-- |UserBuffer:80|~48~1
+LC91 -> - - - - - - - - - - - - - - - * | - * - - - * - * | <-- |UserBuffer:80|~64~1
 
 Pin
-83   -> - - - - - - - - - - - - - - - - | - * - - - - - - | <-- clk
-49   -> * - - - - - - - - * * * * * * * | - * - * * * * * | <-- pattern0
-50   -> * - - - - - - - - * * * * * * * | - * - * * * * * | <-- pattern1
-LC98 -> - - - - - - - - - - - - - * - - | - - - - * * - - | <-- |AnswerCheck:21|~153~1
-LC73 -> - - - - - - - - - - - - - * - - | - - - * - * - - | <-- |AnswerCheck:21|~204~1
-LC65 -> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- |AnswerCheck:21|~210~1
-LC69 -> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- |AnswerCheck:21|~253~1
-LC31 -> - * - - - - - - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv1|D_FF:d1|:6
-LC70 -> - - - - - - - - * - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv9|D_FF:d1|:6
-LC21 -> * - - - - - - - - * * * * * * * | - * - * * * * * | <-- round0
-LC19 -> * - - - - - - - - * * * * * * * | - * - * * * * * | <-- round1
-LC5  -> - - - - - - - - - - - * - - * - | - * - - - * - - | <-- scoreA0
-LC29 -> - - - - - - - - - - - - - * - - | - * - - - * - * | <-- scoreA2
-LC30 -> - - - - - - - - - - * - - - - - | - - - - - * - - | <-- |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node1
-LC32 -> - - - - - - - - - * - - - - - - | - - - - - * - - | <-- |StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node2
-LC102-> * - - - - - - - - * * * * * * * | - * - * * * * - | <-- |UserBuffer:18|~33~1
-LC109-> * - - - - - - - - * * * * * * * | - * - * * * * - | <-- |UserBuffer:18|~49~1
+83   -> - - - - - - - - - - - - - - - - | * - - - - - - - | <-- clk
+54   -> - - - - - - - - - - * * * - - - | - - - - - * - - | <-- pa_a
+55   -> - - - - - - - - - - * * * - - - | - - - - - * - - | <-- pa_b
+56   -> - - - - - - - - - - * * * - - - | - - - - - * - - | <-- pa_c
+57   -> - - - - - - - - - - * * * - - - | - - - - - * - - | <-- pa_d
+49   -> * * * * - - - - - - - - - - - - | - * - - * * * * | <-- pattern0
+50   -> * * * * - - - - - - - - - - - - | - * - - * * * * | <-- pattern1
+58   -> - - - - - - - - - - - - - * * * | - - - - - * - - | <-- pb_a
+60   -> - - - - - - - - - - - - - * * * | - - - - - * - - | <-- pb_b
+61   -> - - - - - - - - - - - - - * * * | - - - - - * - - | <-- pb_c
+63   -> - - - - - - - - - - - - - * * * | - - - - - * - - | <-- pb_d
+LC108-> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- |AnswerCheck:21|~210~1
+LC22 -> * - - - - - - - - - - - - - - - | - - - - - * - - | <-- |AnswerCheck:21|~253~1
+LC111-> - - - * - - - - - - - - - - - - | - - - - - * - - | <-- |AnswerCheck:22|~253~1
+LC9  -> - - - - * - - - - - - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv1|D_FF:d1|:6
+LC102-> - - - - - - - - - * - - - - - - | - - - - - * - - | <-- |ClockDivider:66|T_FF:clkDiv7|D_FF:d1|:6
+LC21 -> * * * * - - - - - - - - - - - - | - * - - * * * * | <-- round0
+LC19 -> * * * * - - - - - - - - - - - - | - * - - * * * * | <-- round1
+LC17 -> - - - - - - - - - - * * * * * * | - * - - - * - - | <-- |StateBox:60|:34
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -670,54 +631,53 @@ testvccgnd
 Logic Array Block 'G':
 
                                          Logic cells placed in LAB 'G'
-        +------------------------------- LC98 |AnswerCheck:21|~153~1
-        | +----------------------------- LC112 |AnswerCheck:21|~253~2
-        | | +--------------------------- LC103 |AnswerCheck:22|~210~1
-        | | | +------------------------- LC107 |AnswerCheck:22|~234~1
-        | | | | +----------------------- LC108 |AnswerCheck:22|~253~1
-        | | | | | +--------------------- LC97 |AnswerCheck:22|~253~2
-        | | | | | | +------------------- LC99 led1
-        | | | | | | | +----------------- LC101 led2
-        | | | | | | | | +--------------- LC104 led3
-        | | | | | | | | | +------------- LC105 led4
-        | | | | | | | | | | +----------- LC102 |UserBuffer:18|~33~1
-        | | | | | | | | | | | +--------- LC109 |UserBuffer:18|~49~1
-        | | | | | | | | | | | | +------- LC110 |UserBuffer:18|~65~1
-        | | | | | | | | | | | | | +----- LC100 |UserBuffer:20|~33~1
-        | | | | | | | | | | | | | | +--- LC106 |UserBuffer:20|~49~1
-        | | | | | | | | | | | | | | | +- LC111 |UserBuffer:20|~65~1
+        +------------------------------- LC106 |AnswerCheck:21|~204~1
+        | +----------------------------- LC108 |AnswerCheck:21|~210~1
+        | | +--------------------------- LC100 |AnswerCheck:21|~253~3
+        | | | +------------------------- LC111 |AnswerCheck:22|~253~1
+        | | | | +----------------------- LC102 |ClockDivider:66|T_FF:clkDiv7|D_FF:d1|:6
+        | | | | | +--------------------- LC109 |ClockDivider:66|T_FF:clkDiv9|D_FF:d1|:6
+        | | | | | | +------------------- LC112 |ClockDivider:69|T_FF:clkDiv1|D_FF:d1|:6
+        | | | | | | | +----------------- LC98 |ClockDivider:69|T_FF:clkDiv2|D_FF:d1|:6
+        | | | | | | | | +--------------- LC103 |ClockDivider:69|T_FF:clkDiv3|D_FF:d1|:6
+        | | | | | | | | | +------------- LC110 |ClockDivider:69|T_FF:clkDiv5|D_FF:d1|:6
+        | | | | | | | | | | +----------- LC99 led1
+        | | | | | | | | | | | +--------- LC101 led2
+        | | | | | | | | | | | | +------- LC104 led3
+        | | | | | | | | | | | | | +----- LC105 led4
+        | | | | | | | | | | | | | | +--- LC107 open
+        | | | | | | | | | | | | | | | +- LC97 |StateBox:60|~72~1
         | | | | | | | | | | | | | | | | 
         | | | | | | | | | | | | | | | |   Other LABs fed by signals
         | | | | | | | | | | | | | | | |   that feed LAB 'G'
 LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'G':
-LC107-> - - - - * - - - - - - - - - - - | - - - - - - * - | <-- |AnswerCheck:22|~234~1
-LC97 -> - - - - * - - - - - - - - - - - | - - - - - - * - | <-- |AnswerCheck:22|~253~2
-LC102-> * * - - - - - - - - * - - - - - | - * - * * * * - | <-- |UserBuffer:18|~33~1
-LC109-> * * - - - - - - - - - * - - - - | - * - * * * * - | <-- |UserBuffer:18|~49~1
-LC110-> - - - - - - - - - - - - * - - - | - * - - - - * * | <-- |UserBuffer:18|~65~1
-LC100-> - - * * * * - - - - - - - * - - | - - - - - - * * | <-- |UserBuffer:20|~33~1
-LC106-> - - * * * * - - - - - - - - * - | - - - - - - * * | <-- |UserBuffer:20|~49~1
-LC111-> - - - - - - - - - - - - - - - * | - * - - - - * * | <-- |UserBuffer:20|~65~1
+LC106-> - * * - - - - - - - - - - - - - | - * - - - - * - | <-- |AnswerCheck:21|~204~1
+LC109-> - - - - - * * - - - - - - - - - | - - - - - - * - | <-- |ClockDivider:66|T_FF:clkDiv9|D_FF:d1|:6
+LC112-> - - - - - - * * - - - - - - - - | - - - - - - * - | <-- |ClockDivider:69|T_FF:clkDiv1|D_FF:d1|:6
+LC98 -> - - - - - - - * * - - - - - - - | - - - - - - * - | <-- |ClockDivider:69|T_FF:clkDiv2|D_FF:d1|:6
 
 Pin
-83   -> - - - - - - - - - - - - - - - - | - * - - - - - - | <-- clk
-54   -> - - - - - - - - - - * * * - - - | - - - - - - * - | <-- pa_a
-55   -> - - - - - - - - - - * * * - - - | - - - - - - * - | <-- pa_b
-56   -> - - - - - - - - - - * * * - - - | - - - - - - * - | <-- pa_c
-57   -> - - - - - - - - - - * * * - - - | - - - - - - * - | <-- pa_d
-49   -> * * * * * * - - - - - - - - - - | - * - * * * * * | <-- pattern0
-50   -> * * * * * * - - - - - - - - - - | - * - * * * * * | <-- pattern1
-58   -> - - - - - - - - - - - - - * * * | - - - - - - * - | <-- pb_a
-60   -> - - - - - - - - - - - - - * * * | - - - - - - * - | <-- pb_b
-61   -> - - - - - - - - - - - - - * * * | - - - - - - * - | <-- pb_c
-63   -> - - - - - - - - - - - - - * * * | - - - - - - * - | <-- pb_d
-LC115-> - - * * * - - - - - - - - - - - | - - - - - - * * | <-- |AnswerCheck:22|~153~1
-LC113-> - - * * - - - - - - - - - - - - | - - - - - - * * | <-- |AnswerCheck:22|~204~1
-LC123-> - - - - * - - - - - - - - - - - | - - - - - - * - | <-- |AnswerCheck:22|~253~3
-LC21 -> * * * * * * * * * * - - - - - - | - * - * * * * * | <-- round0
-LC19 -> * * * * * * * * * * - - - - - - | - * - * * * * * | <-- round1
-LC20 -> - - - - - - - - - - * * * * * * | - * - - - - * - | <-- |StateBox:60|:34
-LC26 -> - - - - - - * * * * - - - - - - | - * - - - - * - | <-- |StateBox:60|:120
+83   -> - - - - - - - - - - - - - - - - | * - - - - - - - | <-- clk
+49   -> * * * * - - - - - - - - - - - * | - * - - * * * * | <-- pattern0
+50   -> * * * * - - - - - - - - - - - * | - * - - * * * * | <-- pattern1
+LC116-> * * - - - - - - - - - - - - - - | - * - - - - * - | <-- |AnswerCheck:21|~153~1
+LC114-> - - - * - - - - - - - - - - - - | - - - - - - * * | <-- |AnswerCheck:22|~153~1
+LC85 -> - - - * - - - - - - - - - - - - | - - - - - - * - | <-- |AnswerCheck:22|~234~1
+LC128-> - - - * - - - - - - - - - - - - | - - - - - - * - | <-- |AnswerCheck:22|~253~2
+LC119-> - - - * - - - - - - - - - - - - | - - - - - - * - | <-- |AnswerCheck:22|~253~3
+LC93 -> - - - - - - - - - - - - - - - * | - - - - - - * * | <-- |AnswerCheck:22|~257~1
+LC84 -> - - - - * - - - - - - - - - - - | - - - - - - * - | <-- |ClockDivider:66|T_FF:clkDiv6|D_FF:d1|:6
+LC87 -> - - - - - * - - - - - - - - - - | - - - - - - * - | <-- |ClockDivider:66|T_FF:clkDiv8|D_FF:d1|:6
+LC67 -> - - - - - - - - - * - - - - - - | - - - - - - * - | <-- |ClockDivider:69|T_FF:clkDiv4|D_FF:d1|:6
+LC21 -> * * * * - - - - - - * * * * - * | - * - - * * * * | <-- round0
+LC19 -> * * * * - - - - - - * * * * - * | - * - - * * * * | <-- round1
+LC125-> - - - - - - - - - - - - - - - * | - - - - - - * - | <-- |StateBox:60|lpm_add_sub:124|addcore:adder|addcore:adder0|result_node2
+LC118-> - - - - - - - - - - - - - - - * | - - - - - - * - | <-- |StateBox:60|~72~2
+LC30 -> - - - - - - - - - - * * * * - - | * * - - - - * - | <-- |StateBox:60|:120
+LC89 -> * * * - - - - - - - - - - - - - | - * - - * * * * | <-- |UserBuffer:78|~32~1
+LC82 -> * * * - - - - - - - - - - - - - | - * - - * * * * | <-- |UserBuffer:78|~48~1
+LC92 -> - - - * - - - - - - - - - - - * | - - - - - * * * | <-- |UserBuffer:80|~32~1
+LC81 -> - - - * - - - - - - - - - - - * | - - - - - * * * | <-- |UserBuffer:80|~48~1
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -732,55 +692,53 @@ testvccgnd
 Logic Array Block 'H':
 
                                          Logic cells placed in LAB 'H'
-        +------------------------------- LC115 |AnswerCheck:22|~153~1
-        | +----------------------------- LC113 |AnswerCheck:22|~204~1
-        | | +--------------------------- LC123 |AnswerCheck:22|~253~3
-        | | | +------------------------- LC119 |AnswerCheck:22|~257~1
-        | | | | +----------------------- LC117 open
-        | | | | | +--------------------- LC118 |StateBox:60|lpm_add_sub:124|addcore:adder|addcore:adder0|result_node2
-        | | | | | | +------------------- LC121 |StateBox:60|~56~1
-        | | | | | | | +----------------- LC128 |StateBox:60|~72~1
-        | | | | | | | | +--------------- LC127 |StateBox:60|~72~2
-        | | | | | | | | | +------------- LC126 |StateBox:60|~76~1
-        | | | | | | | | | | +----------- LC125 |StateBox:60|~89~1
-        | | | | | | | | | | | +--------- LC124 |StateBox:60|~90~1
-        | | | | | | | | | | | | +------- LC122 |StateBox:60|~90~2
-        | | | | | | | | | | | | | +----- LC120 |StateBox:60|~91~1
-        | | | | | | | | | | | | | | +--- LC116 |StateBox:60|~91~2
-        | | | | | | | | | | | | | | | +- LC114 |StateBox:60|~113~1
+        +------------------------------- LC116 |AnswerCheck:21|~153~1
+        | +----------------------------- LC122 |AnswerCheck:21|~234~2
+        | | +--------------------------- LC126 |AnswerCheck:21|~253~2
+        | | | +------------------------- LC114 |AnswerCheck:22|~153~1
+        | | | | +----------------------- LC127 |AnswerCheck:22|~204~1
+        | | | | | +--------------------- LC128 |AnswerCheck:22|~253~2
+        | | | | | | +------------------- LC119 |AnswerCheck:22|~253~3
+        | | | | | | | +----------------- LC125 |StateBox:60|lpm_add_sub:124|addcore:adder|addcore:adder0|result_node2
+        | | | | | | | | +--------------- LC115 |StateBox:60|~56~1
+        | | | | | | | | | +------------- LC118 |StateBox:60|~72~2
+        | | | | | | | | | | +----------- LC120 |StateBox:60|~76~1
+        | | | | | | | | | | | +--------- LC121 |StateBox:60|~89~1
+        | | | | | | | | | | | | +------- LC124 |StateBox:60|~90~1
+        | | | | | | | | | | | | | +----- LC117 |StateBox:60|~90~2
+        | | | | | | | | | | | | | | +--- LC123 |StateBox:60|~91~1
+        | | | | | | | | | | | | | | | +- LC113 |StateBox:60|~91~2
         | | | | | | | | | | | | | | | | 
         | | | | | | | | | | | | | | | |   Other LABs fed by signals
         | | | | | | | | | | | | | | | |   that feed LAB 'H'
 LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'H':
-LC115-> - * - - - - - - - * - * - * - - | - - - - - - * * | <-- |AnswerCheck:22|~153~1
-LC113-> - - * - - - - - - * - - * - * - | - - - - - - * * | <-- |AnswerCheck:22|~204~1
-LC119-> - - - - - - - * * * - * - * - - | - - - - - - - * | <-- |AnswerCheck:22|~257~1
-LC118-> - - - - - - - * - - - - - - - - | - - - - - - - * | <-- |StateBox:60|lpm_add_sub:124|addcore:adder|addcore:adder0|result_node2
-LC128-> - - - - - - - - - - * - - - - - | - - - - - - - * | <-- |StateBox:60|~72~1
-LC127-> - - - - - - - * - - - - - - - - | - - - - - - - * | <-- |StateBox:60|~72~2
-LC126-> - - - - - - - - - - * - - - - - | - - - - - - - * | <-- |StateBox:60|~76~1
-LC122-> - - - - - - - - - - - * - - - - | - - - - - - - * | <-- |StateBox:60|~90~2
-LC116-> - - - - - - - - - - - - - * - - | - - - - - - - * | <-- |StateBox:60|~91~2
+LC114-> - - - - - - - - - - * - * - * - | - - - - - - * * | <-- |AnswerCheck:22|~153~1
+LC127-> - - - - - - * - - - * - - * - * | - - - - - - - * | <-- |AnswerCheck:22|~204~1
+LC120-> - - - - - - - - - - - * - - - - | - - - - - - - * | <-- |StateBox:60|~76~1
+LC117-> - - - - - - - - - - - - * - - - | - - - - - - - * | <-- |StateBox:60|~90~2
+LC113-> - - - - - - - - - - - - - - * - | - - - - - - - * | <-- |StateBox:60|~91~2
 
 Pin
-83   -> - - - - - - - - - - - - - - - - | - * - - - - - - | <-- clk
-49   -> * * * * - - - * * * - - * - * - | - * - * * * * * | <-- pattern0
-50   -> * * * * - - - * * * - * * * * - | - * - * * * * * | <-- pattern1
-LC103-> - - - * - - - - - - - - - - - - | - - - - - - - * | <-- |AnswerCheck:22|~210~1
-LC108-> - - - * - - - - - - - - - - - - | - - - - - - - * | <-- |AnswerCheck:22|~253~1
-LC21 -> * * * * - - - * * * - - * - * * | - * - * * * * * | <-- round0
-LC19 -> * * * * - - - * * * - - * - * - | - * - * * * * * | <-- round1
-LC29 -> - - - - - - * - - - - - - - - - | - * - - - * - * | <-- scoreA2
-LC27 -> - - - - - * - - - - - * * * - - | - - - - - - - * | <-- scoreB0
-LC25 -> - - - - - * - - - - - * - - - - | - - - - - - - * | <-- scoreB1
-LC24 -> - - - - - * - - - * * - - - - - | - - - - - - - * | <-- scoreB2
-LC17 -> - - - - - - * - - - * * * * * * | - * - - - - - * | <-- |StateBox:60|visit
-LC92 -> - - - - - - * - - - - - - - - - | - - - - - - - * | <-- |StateBox:60|~39~1
-LC91 -> - - - - - - * - - - - - - - - - | - - - - - - - * | <-- |StateBox:60|~43~1
-LC110-> - - - - - - * - - - * * * * * * | - * - - - - * * | <-- |UserBuffer:18|~65~1
-LC100-> * * * * - - - * * * - - * - * - | - - - - - - * * | <-- |UserBuffer:20|~33~1
-LC106-> * * * * - - - * * * - - * - * - | - - - - - - * * | <-- |UserBuffer:20|~49~1
-LC111-> - - - - - - * - - - * * * * * * | - * - - - - * * | <-- |UserBuffer:20|~65~1
+83   -> - - - - - - - - - - - - - - - - | * - - - - - - - | <-- clk
+49   -> * * * * * * * - - * * - - * - * | - * - - * * * * | <-- pattern0
+50   -> * * * * * * * - - * * - * * * * | - * - - * * * * | <-- pattern1
+LC93 -> - - - - - - - - - * * - * - * - | - - - - - - * * | <-- |AnswerCheck:22|~257~1
+LC21 -> * - * * * * * - - * * - - * - * | - * - - * * * * | <-- round0
+LC19 -> * * * * * * * - - * * - - * - * | - * - - * * * * | <-- round1
+LC29 -> - - - - - - - - * - - - - - - - | - * - - - - - * | <-- scoreA2
+LC27 -> - - - - - - - * - - - - * * * - | - - - - - - - * | <-- scoreB0
+LC25 -> - - - - - - - * - - - - * - - - | - - - - - - - * | <-- scoreB1
+LC24 -> - - - - - - - * - - * * - - - - | - - - - - - - * | <-- scoreB2
+LC20 -> - - - - - - - - * - - * * * * * | - * - - - - - * | <-- |StateBox:60|visit
+LC77 -> - - - - - - - - * - - - - - - - | - - - - - - - * | <-- |StateBox:60|~39~1
+LC32 -> - - - - - - - - * - - - - - - - | - - - - - - - * | <-- |StateBox:60|~43~1
+LC97 -> - - - - - - - - - - - * - - - - | - - - - - - - * | <-- |StateBox:60|~72~1
+LC89 -> * * * - - - - - - - - - - - - - | - * - - * * * * | <-- |UserBuffer:78|~32~1
+LC82 -> * * * - - - - - - - - - - - - - | - * - - * * * * | <-- |UserBuffer:78|~48~1
+LC90 -> - - - - - - - - * - - * * * * * | - * - - - * - * | <-- |UserBuffer:78|~64~1
+LC92 -> - - - * * * * - - * * - - * - * | - - - - - * * * | <-- |UserBuffer:80|~32~1
+LC81 -> - - - * * * * - - * * - - * - * | - - - - - * * * | <-- |UserBuffer:80|~48~1
+LC91 -> - - - - - - - - * - - * * * * * | - * - - - * - * | <-- |UserBuffer:80|~64~1
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -812,767 +770,671 @@ reset    : INPUT;
 -- Node name is 'led1' 
 -- Equation name is 'led1', location is LC099, type is output.
  led1    = LCELL( _EQ001 $  GND);
-  _EQ001 = !_LC026 & !round0 & !round1;
+  _EQ001 = !_LC030 & !round0 & !round1;
 
 -- Node name is 'led2' 
 -- Equation name is 'led2', location is LC101, type is output.
  led2    = LCELL( _EQ002 $  GND);
-  _EQ002 = !_LC026 &  round0 & !round1;
+  _EQ002 = !_LC030 &  round0 & !round1;
 
 -- Node name is 'led3' 
 -- Equation name is 'led3', location is LC104, type is output.
  led3    = LCELL( _EQ003 $  GND);
-  _EQ003 = !_LC026 & !round0 &  round1;
+  _EQ003 = !_LC030 & !round0 &  round1;
 
 -- Node name is 'led4' 
 -- Equation name is 'led4', location is LC105, type is output.
  led4    = LCELL( _EQ004 $  GND);
-  _EQ004 = !_LC026 &  round0 &  round1;
+  _EQ004 = !_LC030 &  round0 &  round1;
 
 -- Node name is 'open' 
--- Equation name is 'open', location is LC117, type is output.
+-- Equation name is 'open', location is LC107, type is output.
  open    = LCELL( GND $  VCC);
 
 -- Node name is 'round0' = '|StateBox:60|:122' 
 -- Equation name is 'round0', type is output 
- round0  = DFFE( _EQ005 $  GND,  _LC079,  VCC,  VCC,  VCC);
-  _EQ005 =  _LC114 & !reset;
+ round0  = TFFE( _EQ005,  _LC065,  VCC,  VCC,  VCC);
+  _EQ005 = !_LC020 &  _LC090 &  _LC091 & !reset & !round0
+         # !_LC020 &  _LC090 &  _LC091 &  round0
+         #  reset &  round0;
 
 -- Node name is 'round1' = '|StateBox:60|:121' 
 -- Equation name is 'round1', type is output 
- round1  = TFFE( _EQ006,  _LC079,  VCC,  VCC,  VCC);
-  _EQ006 = !_LC017 &  _LC110 &  _LC111 & !reset &  round0 & !round1
-         # !_LC017 &  _LC110 &  _LC111 &  round0 &  round1
+ round1  = TFFE( _EQ006,  _LC065,  VCC,  VCC,  VCC);
+  _EQ006 = !_LC020 &  _LC090 &  _LC091 & !reset &  round0 & !round1
+         # !_LC020 &  _LC090 &  _LC091 &  round0 &  round1
          #  reset &  round1;
 
 -- Node name is 'scoreA0' = '|StateBox:60|:67' 
 -- Equation name is 'scoreA0', type is output 
- scoreA0 = DFFE( _EQ007 $  GND,  _LC079,  VCC,  VCC,  VCC);
+ scoreA0 = DFFE( _EQ007 $  GND,  _LC065,  VCC,  VCC,  VCC);
   _EQ007 =  _LC028 & !reset;
 
 -- Node name is 'scoreA1' = '|StateBox:60|:66' 
 -- Equation name is 'scoreA1', type is output 
- scoreA1 = DFFE( _EQ008 $  GND,  _LC079,  VCC,  VCC,  VCC);
+ scoreA1 = DFFE( _EQ008 $  GND,  _LC065,  VCC,  VCC,  VCC);
   _EQ008 =  _LC023 & !reset;
 
 -- Node name is 'scoreA2' = '|StateBox:60|:65' 
 -- Equation name is 'scoreA2', type is output 
- scoreA2 = DFFE( _EQ009 $  GND,  _LC079,  VCC,  VCC,  VCC);
-  _EQ009 =  _LC121 & !reset;
+ scoreA2 = DFFE( _EQ009 $  GND,  _LC065,  VCC,  VCC,  VCC);
+  _EQ009 =  _LC115 & !reset;
 
 -- Node name is 'scoreB0' = '|StateBox:60|:100' 
 -- Equation name is 'scoreB0', type is output 
- scoreB0 = DFFE( _EQ010 $  GND,  _LC079,  VCC,  VCC,  VCC);
-  _EQ010 =  _LC120 & !reset;
+ scoreB0 = DFFE( _EQ010 $  GND,  _LC065,  VCC,  VCC,  VCC);
+  _EQ010 =  _LC123 & !reset;
 
 -- Node name is 'scoreB1' = '|StateBox:60|:99' 
 -- Equation name is 'scoreB1', type is output 
- scoreB1 = DFFE( _EQ011 $  GND,  _LC079,  VCC,  VCC,  VCC);
+ scoreB1 = DFFE( _EQ011 $  GND,  _LC065,  VCC,  VCC,  VCC);
   _EQ011 =  _LC124 & !reset;
 
 -- Node name is 'scoreB2' = '|StateBox:60|:98' 
 -- Equation name is 'scoreB2', type is output 
- scoreB2 = DFFE( _EQ012 $  GND,  _LC079,  VCC,  VCC,  VCC);
-  _EQ012 =  _LC125 & !reset;
+ scoreB2 = DFFE( _EQ012 $  GND,  _LC065,  VCC,  VCC,  VCC);
+  _EQ012 =  _LC121 & !reset;
 
 -- Node name is '|AnswerCheck:21|~153~1' 
--- Equation name is '_LC098', type is buried 
+-- Equation name is '_LC116', type is buried 
 -- synthesized logic cell 
-_LC098   = LCELL( _EQ013 $  GND);
-  _EQ013 =  _LC102 & !_LC109 &  pattern0 & !pattern1 &  round0 &  round1
-         #  _LC102 &  _LC109 &  pattern0 & !pattern1 &  round0 & !round1
-         # !_LC102 & !_LC109 &  pattern0 & !pattern1 & !round0 &  round1
-         # !_LC102 &  _LC109 &  pattern0 & !pattern1 & !round0 & !round1;
+_LC116   = LCELL( _EQ013 $  GND);
+  _EQ013 = !_LC082 &  _LC089 &  pattern0 & !pattern1 &  round0 &  round1
+         #  _LC082 &  _LC089 &  pattern0 & !pattern1 &  round0 & !round1
+         # !_LC082 & !_LC089 &  pattern0 & !pattern1 & !round0 &  round1
+         #  _LC082 & !_LC089 &  pattern0 & !pattern1 & !round0 & !round1;
 
 -- Node name is '|AnswerCheck:21|~204~1' 
--- Equation name is '_LC073', type is buried 
+-- Equation name is '_LC106', type is buried 
 -- synthesized logic cell 
-_LC073   = LCELL( _EQ014 $  VCC);
-  _EQ014 = !_LC098 &  _LC109 &  round1 &  _X001
-         # !_LC098 & !_LC109 & !round1 &  _X001
-         # !_LC098 &  _LC102 &  round0
-         # !_LC098 & !_LC102 & !round0;
+_LC106   = LCELL( _EQ014 $  VCC);
+  _EQ014 =  _LC082 & !_LC116 &  round1 &  _X001
+         # !_LC082 & !_LC116 & !round1 &  _X001
+         #  _LC089 & !_LC116 &  round0
+         # !_LC089 & !_LC116 & !round0;
   _X001  = EXP(!pattern0 & !pattern1);
 
 -- Node name is '|AnswerCheck:21|~210~1' 
--- Equation name is '_LC065', type is buried 
+-- Equation name is '_LC108', type is buried 
 -- synthesized logic cell 
-_LC065   = LCELL( _EQ015 $  _EQ016);
-  _EQ015 =  _LC102 & !_LC109 & !pattern0 & !pattern1 &  round1 &  _X002 & 
-              _X003 &  _X004 &  _X005 &  _X006 &  _X007 &  _X008 &  _X009 & 
-              _X010
-         # !_LC102 &  _LC109 & !pattern1 &  round0 & !round1 &  _X002 & 
-              _X003 &  _X004 &  _X005 &  _X006 &  _X007 &  _X008 &  _X009 & 
-              _X010
-         # !_LC102 &  _LC109 &  pattern1 & !round0 &  _X002 &  _X003 &  _X004 & 
-              _X005 &  _X006 &  _X007 &  _X008 &  _X009 &  _X010
-         # !_LC102 &  _LC109 & !round0 &  round1 &  _X002 &  _X003 &  _X004 & 
-              _X005 &  _X006 &  _X007 &  _X008 &  _X009 &  _X010;
-  _X002  = EXP( _LC102 & !_LC109 &  pattern1 & !round1);
-  _X003  = EXP( _LC109 &  pattern0 &  pattern1);
-  _X004  = EXP( _LC102 & !_LC109 &  pattern0 & !round1);
-  _X005  = EXP( _LC109 & !pattern0 & !pattern1 & !round1);
-  _X006  = EXP( _LC109 &  pattern1 &  round1);
-  _X007  = EXP( _LC109 &  pattern0 &  round1);
-  _X008  = EXP( _LC102 &  pattern1 &  round0);
-  _X009  = EXP( _LC102 & !pattern0 &  round0);
-  _X010  = EXP( _LC102 &  pattern0 & !round0);
-  _EQ016 =  _X002 &  _X003 &  _X004 &  _X005 &  _X006 &  _X007 &  _X008 & 
-              _X009 &  _X010;
-  _X002  = EXP( _LC102 & !_LC109 &  pattern1 & !round1);
-  _X003  = EXP( _LC109 &  pattern0 &  pattern1);
-  _X004  = EXP( _LC102 & !_LC109 &  pattern0 & !round1);
-  _X005  = EXP( _LC109 & !pattern0 & !pattern1 & !round1);
-  _X006  = EXP( _LC109 &  pattern1 &  round1);
-  _X007  = EXP( _LC109 &  pattern0 &  round1);
-  _X008  = EXP( _LC102 &  pattern1 &  round0);
-  _X009  = EXP( _LC102 & !pattern0 &  round0);
-  _X010  = EXP( _LC102 &  pattern0 & !round0);
+_LC108   = LCELL( _EQ015 $  _EQ016);
+  _EQ015 = !_LC082 &  _LC089 & !_LC116 & !pattern1 &  round1 &  _X002 & 
+              _X003 &  _X004 &  _X005
+         #  _LC082 & !_LC089 & !_LC116 & !pattern1 & !round0 &  _X002 & 
+              _X003 &  _X004 &  _X005
+         #  _LC089 & !_LC116 & !pattern1 &  round0 &  _X002 &  _X003 &  _X004 & 
+              _X005
+         #  _LC082 & !_LC106 & !pattern0 &  pattern1 &  _X002 &  _X003 & 
+              _X004 &  _X005;
+  _X002  = EXP( _LC082 & !_LC116 & !pattern1 & !round1);
+  _X003  = EXP( _LC089 & !_LC106 & !pattern0 &  pattern1);
+  _X004  = EXP( _LC082 & !_LC116 &  pattern0);
+  _X005  = EXP( _LC089 & !_LC116 &  pattern0);
+  _EQ016 =  _X002 &  _X003 &  _X004 &  _X005;
+  _X002  = EXP( _LC082 & !_LC116 & !pattern1 & !round1);
+  _X003  = EXP( _LC089 & !_LC106 & !pattern0 &  pattern1);
+  _X004  = EXP( _LC082 & !_LC116 &  pattern0);
+  _X005  = EXP( _LC089 & !_LC116 &  pattern0);
 
 -- Node name is '|AnswerCheck:21|~234~1' 
--- Equation name is '_LC057', type is buried 
+-- Equation name is '_LC070', type is buried 
 -- synthesized logic cell 
-_LC057   = LCELL( _EQ017 $  _EQ018);
-  _EQ017 =  _LC102 &  _LC109 & !pattern1 & !round0 & !round1 &  _X003 & 
-              _X005 &  _X006 &  _X007 &  _X011 &  _X012 &  _X013 &  _X014 & 
-              _X015
-         # !_LC102 & !_LC109 & !pattern1 &  round0 &  round1 &  _X003 & 
-              _X005 &  _X006 &  _X007 &  _X011 &  _X012 &  _X013 &  _X014 & 
-              _X015
-         #  _LC102 &  _LC109 &  pattern1 &  round0 &  _X003 &  _X005 &  _X006 & 
-              _X007 &  _X011 &  _X012 &  _X013 &  _X014 &  _X015
-         #  _LC102 &  _LC109 &  round0 &  round1 &  _X003 &  _X005 &  _X006 & 
-              _X007 &  _X011 &  _X012 &  _X013 &  _X014 &  _X015;
-  _X003  = EXP( _LC109 &  pattern0 &  pattern1);
-  _X005  = EXP( _LC109 & !pattern0 & !pattern1 & !round1);
-  _X006  = EXP( _LC109 &  pattern1 &  round1);
-  _X007  = EXP( _LC109 &  pattern0 &  round1);
-  _X011  = EXP(!_LC102 &  pattern0 &  round0);
-  _X012  = EXP(!_LC102 & !_LC109 &  pattern1 & !round1);
-  _X013  = EXP(!_LC102 & !_LC109 &  pattern0 & !round1);
-  _X014  = EXP(!_LC102 & !pattern0 & !round0);
-  _X015  = EXP(!_LC102 &  pattern0 &  pattern1);
-  _EQ018 =  _X003 &  _X005 &  _X006 &  _X007 &  _X011 &  _X012 &  _X013 & 
-              _X014 &  _X015;
-  _X003  = EXP( _LC109 &  pattern0 &  pattern1);
-  _X005  = EXP( _LC109 & !pattern0 & !pattern1 & !round1);
-  _X006  = EXP( _LC109 &  pattern1 &  round1);
-  _X007  = EXP( _LC109 &  pattern0 &  round1);
-  _X011  = EXP(!_LC102 &  pattern0 &  round0);
-  _X012  = EXP(!_LC102 & !_LC109 &  pattern1 & !round1);
-  _X013  = EXP(!_LC102 & !_LC109 &  pattern0 & !round1);
-  _X014  = EXP(!_LC102 & !pattern0 & !round0);
-  _X015  = EXP(!_LC102 &  pattern0 &  pattern1);
+_LC070   = LCELL( _EQ017 $  _EQ018);
+  _EQ017 =  _LC082 &  _LC089 & !_LC122 & !pattern1 & !round0 & !round1 & 
+              _X006 &  _X007 &  _X008 &  _X009
+         # !_LC082 & !_LC089 & !_LC122 & !pattern1 &  round0 &  round1 & 
+              _X006 &  _X007 &  _X008 &  _X009
+         #  _LC082 &  _LC089 & !_LC122 &  pattern1 &  round0 &  _X006 & 
+              _X007 &  _X008 &  _X009
+         #  _LC082 &  _LC089 & !_LC122 &  round0 &  round1 &  _X006 &  _X007 & 
+              _X008 &  _X009;
+  _X006  = EXP( _LC082 &  pattern0 &  pattern1);
+  _X007  = EXP(!_LC089 &  pattern0 &  round0);
+  _X008  = EXP(!_LC089 &  pattern0 &  pattern1);
+  _X009  = EXP(!_LC089 & !pattern0 & !round0);
+  _EQ018 = !_LC122 &  _X006 &  _X007 &  _X008 &  _X009;
+  _X006  = EXP( _LC082 &  pattern0 &  pattern1);
+  _X007  = EXP(!_LC089 &  pattern0 &  round0);
+  _X008  = EXP(!_LC089 &  pattern0 &  pattern1);
+  _X009  = EXP(!_LC089 & !pattern0 & !round0);
+
+-- Node name is '|AnswerCheck:21|~234~2' 
+-- Equation name is '_LC122', type is buried 
+-- synthesized logic cell 
+_LC122   = LCELL( _EQ019 $  GND);
+  _EQ019 =  _LC082 & !pattern0 & !pattern1 & !round1
+         # !_LC082 & !_LC089 &  pattern1 & !round1
+         # !_LC082 & !_LC089 &  pattern0 & !round1
+         #  _LC082 &  pattern1 &  round1
+         #  _LC082 &  pattern0 &  round1;
 
 -- Node name is '|AnswerCheck:21|~253~1' 
--- Equation name is '_LC069', type is buried 
+-- Equation name is '_LC022', type is buried 
 -- synthesized logic cell 
-_LC069   = LCELL( _EQ019 $  VCC);
-  _EQ019 = !_LC050 & !_LC112 &  _X016 &  _X017 &  _X018 &  _X019 &  _X020
-         # !_LC057 & !round0 &  round1
+_LC022   = LCELL( _EQ020 $  VCC);
+  _EQ020 = !_LC100 & !_LC126 &  _X010 &  _X011 &  _X012 &  _X013 &  _X014
+         # !_LC070 & !round0 &  round1
          #  round0 & !round1;
-  _X016  = EXP(!round0 &  round1);
-  _X017  = EXP( _LC109 & !pattern0 & !pattern1 &  round0 &  round1);
-  _X018  = EXP( _LC098 &  pattern0 &  round0 &  round1);
-  _X019  = EXP( _LC102 &  _LC109 &  round0 &  round1);
-  _X020  = EXP( _LC098 & !pattern1 &  round0 &  round1);
+  _X010  = EXP( _LC082 & !pattern0 & !pattern1 &  round0 &  round1);
+  _X011  = EXP( _LC116 &  pattern0 &  round0 &  round1);
+  _X012  = EXP( _LC082 &  _LC089 &  round0 &  round1);
+  _X013  = EXP( _LC116 & !pattern1 &  round0 &  round1);
+  _X014  = EXP(!round0 &  round1);
 
 -- Node name is '|AnswerCheck:21|~253~2' 
--- Equation name is '_LC112', type is buried 
+-- Equation name is '_LC126', type is buried 
 -- synthesized logic cell 
-_LC112   = LCELL( _EQ020 $  GND);
-  _EQ020 =  _LC102 & !_LC109 & !pattern0 &  pattern1 & !round0 &  round1
-         #  _LC102 &  _LC109 & !pattern0 &  pattern1 & !round0 & !round1
-         # !_LC102 &  _LC109 & !pattern0 &  pattern1 &  round0 & !round1
-         # !_LC102 & !_LC109 &  pattern0 & !pattern1 & !round0 &  round1
-         # !_LC102 &  _LC109 &  pattern0 & !pattern1 & !round0 & !round1;
+_LC126   = LCELL( _EQ021 $  GND);
+  _EQ021 = !_LC082 &  _LC089 & !pattern0 &  pattern1 & !round0 &  round1
+         #  _LC082 &  _LC089 & !pattern0 &  pattern1 & !round0 & !round1
+         #  _LC082 & !_LC089 & !pattern0 &  pattern1 &  round0 & !round1
+         # !_LC082 & !_LC089 &  pattern0 & !pattern1 & !round0 &  round1
+         #  _LC082 & !_LC089 &  pattern0 & !pattern1 & !round0 & !round1;
 
 -- Node name is '|AnswerCheck:21|~253~3' 
--- Equation name is '_LC050', type is buried 
+-- Equation name is '_LC100', type is buried 
 -- synthesized logic cell 
-_LC050   = LCELL( _EQ021 $  GND);
-  _EQ021 =  _LC102 & !_LC109 & !pattern0 & !pattern1 & !round0 & !round1
-         # !_LC102 & !_LC109 & !pattern0 & !pattern1 &  round0 & !round1
-         #  _LC102 &  _LC109 &  pattern0 & !pattern1 &  round0
-         #  _LC073 & !pattern0 &  pattern1 &  round0 &  round1
-         #  _LC102 &  _LC109 & !pattern0 & !pattern1 &  round1;
+_LC100   = LCELL( _EQ022 $  GND);
+  _EQ022 = !_LC082 &  _LC089 & !pattern0 & !pattern1 & !round0 & !round1
+         # !_LC082 & !_LC089 & !pattern0 & !pattern1 &  round0 & !round1
+         #  _LC082 &  _LC089 &  pattern0 & !pattern1 &  round0
+         #  _LC106 & !pattern0 &  pattern1 &  round0 &  round1
+         #  _LC082 &  _LC089 & !pattern0 & !pattern1 &  round1;
 
 -- Node name is '|AnswerCheck:21|~257~1' 
--- Equation name is '_LC082', type is buried 
+-- Equation name is '_LC086', type is buried 
 -- synthesized logic cell 
-_LC082   = LCELL( _EQ022 $  GND);
-  _EQ022 = !_LC102 &  _LC109 &  pattern0 &  pattern1 &  round0 & !round1
-         #  _LC065 &  pattern0 &  pattern1 & !round0 & !round1
-         #  _LC069 &  pattern0 &  pattern1 &  round0
-         #  _LC069 &  pattern0 &  pattern1 &  round1;
+_LC086   = LCELL( _EQ023 $  GND);
+  _EQ023 =  _LC082 & !_LC089 &  pattern0 &  pattern1 &  round0 & !round1
+         #  _LC108 &  pattern0 &  pattern1 & !round0 & !round1
+         #  _LC022 &  pattern0 &  pattern1 &  round0
+         #  _LC022 &  pattern0 &  pattern1 &  round1;
 
 -- Node name is '|AnswerCheck:22|~153~1' 
--- Equation name is '_LC115', type is buried 
+-- Equation name is '_LC114', type is buried 
 -- synthesized logic cell 
-_LC115   = LCELL( _EQ023 $  GND);
-  _EQ023 =  _LC100 & !_LC106 &  pattern0 & !pattern1 &  round0 &  round1
-         #  _LC100 &  _LC106 &  pattern0 & !pattern1 &  round0 & !round1
-         # !_LC100 & !_LC106 &  pattern0 & !pattern1 & !round0 &  round1
-         # !_LC100 &  _LC106 &  pattern0 & !pattern1 & !round0 & !round1;
+_LC114   = LCELL( _EQ024 $  GND);
+  _EQ024 = !_LC081 &  _LC092 &  pattern0 & !pattern1 &  round0 &  round1
+         #  _LC081 &  _LC092 &  pattern0 & !pattern1 &  round0 & !round1
+         # !_LC081 & !_LC092 &  pattern0 & !pattern1 & !round0 &  round1
+         #  _LC081 & !_LC092 &  pattern0 & !pattern1 & !round0 & !round1;
 
 -- Node name is '|AnswerCheck:22|~204~1' 
--- Equation name is '_LC113', type is buried 
+-- Equation name is '_LC127', type is buried 
 -- synthesized logic cell 
-_LC113   = LCELL( _EQ024 $  VCC);
-  _EQ024 =  _LC106 & !_LC115 &  round1 &  _X001
-         # !_LC106 & !_LC115 & !round1 &  _X001
-         #  _LC100 & !_LC115 &  round0
-         # !_LC100 & !_LC115 & !round0;
+_LC127   = LCELL( _EQ025 $  VCC);
+  _EQ025 =  _LC092 &  round0 &  _X015
+         #  _LC081 &  round1 &  _X001
+         # !_LC092 & !round0 &  _X015
+         # !_LC081 & !round1 &  _X001;
+  _X015  = EXP( pattern0 & !pattern1);
   _X001  = EXP(!pattern0 & !pattern1);
 
 -- Node name is '|AnswerCheck:22|~210~1' 
--- Equation name is '_LC103', type is buried 
+-- Equation name is '_LC083', type is buried 
 -- synthesized logic cell 
-_LC103   = LCELL( _EQ025 $  _EQ026);
-  _EQ025 =  _LC100 & !_LC106 & !_LC115 & !pattern1 &  round1 &  _X021 & 
-              _X022 &  _X023 &  _X024
-         # !_LC100 &  _LC106 & !_LC115 & !pattern1 & !round0 &  _X021 & 
-              _X022 &  _X023 &  _X024
-         #  _LC100 & !_LC115 & !pattern1 &  round0 &  _X021 &  _X022 &  _X023 & 
+_LC083   = LCELL( _EQ026 $  _EQ027);
+  _EQ026 = !_LC081 &  _LC092 & !pattern0 & !pattern1 &  round1 &  _X016 & 
+              _X017 &  _X018 &  _X019 &  _X020 &  _X021 &  _X022 &  _X023 & 
               _X024
-         #  _LC106 & !_LC113 & !pattern0 &  pattern1 &  _X021 &  _X022 & 
+         #  _LC081 & !_LC092 & !pattern1 &  round0 & !round1 &  _X016 & 
+              _X017 &  _X018 &  _X019 &  _X020 &  _X021 &  _X022 &  _X023 & 
+              _X024
+         #  _LC081 & !_LC092 &  pattern1 & !round0 &  _X016 &  _X017 &  _X018 & 
+              _X019 &  _X020 &  _X021 &  _X022 &  _X023 &  _X024
+         #  _LC081 & !_LC092 & !round0 &  round1 &  _X016 &  _X017 &  _X018 & 
+              _X019 &  _X020 &  _X021 &  _X022 &  _X023 &  _X024;
+  _X016  = EXP(!_LC081 &  _LC092 &  pattern1 & !round1);
+  _X017  = EXP( _LC081 &  pattern0 &  pattern1);
+  _X018  = EXP(!_LC081 &  _LC092 &  pattern0 & !round1);
+  _X019  = EXP( _LC081 & !pattern0 & !pattern1 & !round1);
+  _X020  = EXP( _LC081 &  pattern1 &  round1);
+  _X021  = EXP( _LC081 &  pattern0 &  round1);
+  _X022  = EXP( _LC092 &  pattern1 &  round0);
+  _X023  = EXP( _LC092 & !pattern0 &  round0);
+  _X024  = EXP( _LC092 &  pattern0 & !round0);
+  _EQ027 =  _X016 &  _X017 &  _X018 &  _X019 &  _X020 &  _X021 &  _X022 & 
               _X023 &  _X024;
-  _X021  = EXP( _LC100 & !_LC113 & !pattern0 &  pattern1);
-  _X022  = EXP( _LC106 & !_LC115 &  pattern0);
-  _X023  = EXP( _LC106 & !_LC115 & !pattern1 & !round1);
-  _X024  = EXP( _LC100 & !_LC115 &  pattern0);
-  _EQ026 =  _X021 &  _X022 &  _X023 &  _X024;
-  _X021  = EXP( _LC100 & !_LC113 & !pattern0 &  pattern1);
-  _X022  = EXP( _LC106 & !_LC115 &  pattern0);
-  _X023  = EXP( _LC106 & !_LC115 & !pattern1 & !round1);
-  _X024  = EXP( _LC100 & !_LC115 &  pattern0);
+  _X016  = EXP(!_LC081 &  _LC092 &  pattern1 & !round1);
+  _X017  = EXP( _LC081 &  pattern0 &  pattern1);
+  _X018  = EXP(!_LC081 &  _LC092 &  pattern0 & !round1);
+  _X019  = EXP( _LC081 & !pattern0 & !pattern1 & !round1);
+  _X020  = EXP( _LC081 &  pattern1 &  round1);
+  _X021  = EXP( _LC081 &  pattern0 &  round1);
+  _X022  = EXP( _LC092 &  pattern1 &  round0);
+  _X023  = EXP( _LC092 & !pattern0 &  round0);
+  _X024  = EXP( _LC092 &  pattern0 & !round0);
 
 -- Node name is '|AnswerCheck:22|~234~1' 
--- Equation name is '_LC107', type is buried 
+-- Equation name is '_LC085', type is buried 
 -- synthesized logic cell 
-_LC107   = LCELL( _EQ027 $  _EQ028);
-  _EQ027 =  _LC100 &  _LC106 & !_LC115 & !pattern1 &  round0 &  _X022 & 
-              _X025 &  _X026 &  _X027
-         # !_LC100 & !_LC106 & !_LC115 & !pattern1 &  round1 &  _X022 & 
-              _X025 &  _X026 &  _X027
-         #  _LC106 & !_LC113 & !pattern0 &  pattern1 &  _X022 &  _X025 & 
-              _X026 &  _X027
-         #  _LC106 & !_LC115 & !pattern1 & !round1 &  _X022 &  _X025 &  _X026 & 
-              _X027;
-  _X022  = EXP( _LC106 & !_LC115 &  pattern0);
-  _X025  = EXP(!_LC100 & !_LC115 & !pattern1 & !round0);
-  _X026  = EXP(!_LC100 & !_LC113 & !pattern0 &  pattern1);
-  _X027  = EXP(!_LC100 & !_LC115 &  pattern0);
-  _EQ028 =  _X022 &  _X025 &  _X026 &  _X027;
-  _X022  = EXP( _LC106 & !_LC115 &  pattern0);
-  _X025  = EXP(!_LC100 & !_LC115 & !pattern1 & !round0);
-  _X026  = EXP(!_LC100 & !_LC113 & !pattern0 &  pattern1);
-  _X027  = EXP(!_LC100 & !_LC115 &  pattern0);
+_LC085   = LCELL( _EQ028 $  _EQ029);
+  _EQ028 =  _LC081 &  _LC092 & !pattern1 & !round0 & !round1 &  _X017 & 
+              _X019 &  _X020 &  _X021 &  _X025 &  _X026 &  _X027 &  _X028 & 
+              _X029
+         # !_LC081 & !_LC092 & !pattern1 &  round0 &  round1 &  _X017 & 
+              _X019 &  _X020 &  _X021 &  _X025 &  _X026 &  _X027 &  _X028 & 
+              _X029
+         #  _LC081 &  _LC092 &  pattern1 &  round0 &  _X017 &  _X019 &  _X020 & 
+              _X021 &  _X025 &  _X026 &  _X027 &  _X028 &  _X029
+         #  _LC081 &  _LC092 &  round0 &  round1 &  _X017 &  _X019 &  _X020 & 
+              _X021 &  _X025 &  _X026 &  _X027 &  _X028 &  _X029;
+  _X017  = EXP( _LC081 &  pattern0 &  pattern1);
+  _X019  = EXP( _LC081 & !pattern0 & !pattern1 & !round1);
+  _X020  = EXP( _LC081 &  pattern1 &  round1);
+  _X021  = EXP( _LC081 &  pattern0 &  round1);
+  _X025  = EXP(!_LC092 &  pattern0 &  round0);
+  _X026  = EXP(!_LC081 & !_LC092 &  pattern1 & !round1);
+  _X027  = EXP(!_LC081 & !_LC092 &  pattern0 & !round1);
+  _X028  = EXP(!_LC092 & !pattern0 & !round0);
+  _X029  = EXP(!_LC092 &  pattern0 &  pattern1);
+  _EQ029 =  _X017 &  _X019 &  _X020 &  _X021 &  _X025 &  _X026 &  _X027 & 
+              _X028 &  _X029;
+  _X017  = EXP( _LC081 &  pattern0 &  pattern1);
+  _X019  = EXP( _LC081 & !pattern0 & !pattern1 & !round1);
+  _X020  = EXP( _LC081 &  pattern1 &  round1);
+  _X021  = EXP( _LC081 &  pattern0 &  round1);
+  _X025  = EXP(!_LC092 &  pattern0 &  round0);
+  _X026  = EXP(!_LC081 & !_LC092 &  pattern1 & !round1);
+  _X027  = EXP(!_LC081 & !_LC092 &  pattern0 & !round1);
+  _X028  = EXP(!_LC092 & !pattern0 & !round0);
+  _X029  = EXP(!_LC092 &  pattern0 &  pattern1);
 
 -- Node name is '|AnswerCheck:22|~253~1' 
--- Equation name is '_LC108', type is buried 
+-- Equation name is '_LC111', type is buried 
 -- synthesized logic cell 
-_LC108   = LCELL( _EQ029 $  VCC);
-  _EQ029 = !_LC097 & !_LC123 &  _X016 &  _X028 &  _X029 &  _X030 &  _X031
-         # !_LC107 & !round0 &  round1
+_LC111   = LCELL( _EQ030 $  VCC);
+  _EQ030 = !_LC119 & !_LC128 &  _X014 &  _X030 &  _X031 &  _X032 &  _X033
+         # !_LC085 & !round0 &  round1
          #  round0 & !round1;
-  _X016  = EXP(!round0 &  round1);
-  _X028  = EXP( _LC106 & !pattern0 & !pattern1 &  round0 &  round1);
-  _X029  = EXP( _LC115 &  pattern0 &  round0 &  round1);
-  _X030  = EXP( _LC100 &  _LC106 &  round0 &  round1);
-  _X031  = EXP( _LC115 & !pattern1 &  round0 &  round1);
+  _X014  = EXP(!round0 &  round1);
+  _X030  = EXP( _LC081 & !pattern0 & !pattern1 &  round0 &  round1);
+  _X031  = EXP( _LC114 &  pattern0 &  round0 &  round1);
+  _X032  = EXP( _LC081 &  _LC092 &  round0 &  round1);
+  _X033  = EXP( _LC114 & !pattern1 &  round0 &  round1);
 
 -- Node name is '|AnswerCheck:22|~253~2' 
--- Equation name is '_LC097', type is buried 
+-- Equation name is '_LC128', type is buried 
 -- synthesized logic cell 
-_LC097   = LCELL( _EQ030 $  GND);
-  _EQ030 =  _LC100 & !_LC106 & !pattern0 &  pattern1 & !round0 &  round1
-         #  _LC100 &  _LC106 & !pattern0 &  pattern1 & !round0 & !round1
-         # !_LC100 &  _LC106 & !pattern0 &  pattern1 &  round0 & !round1
-         # !_LC100 & !_LC106 &  pattern0 & !pattern1 & !round0 &  round1
-         # !_LC100 &  _LC106 &  pattern0 & !pattern1 & !round0 & !round1;
+_LC128   = LCELL( _EQ031 $  GND);
+  _EQ031 = !_LC081 &  _LC092 & !pattern0 &  pattern1 & !round0 &  round1
+         #  _LC081 &  _LC092 & !pattern0 &  pattern1 & !round0 & !round1
+         #  _LC081 & !_LC092 & !pattern0 &  pattern1 &  round0 & !round1
+         # !_LC081 & !_LC092 &  pattern0 & !pattern1 & !round0 &  round1
+         #  _LC081 & !_LC092 &  pattern0 & !pattern1 & !round0 & !round1;
 
 -- Node name is '|AnswerCheck:22|~253~3' 
--- Equation name is '_LC123', type is buried 
--- synthesized logic cell 
-_LC123   = LCELL( _EQ031 $  GND);
-  _EQ031 =  _LC100 & !_LC106 & !pattern0 & !pattern1 & !round0 & !round1
-         # !_LC100 & !_LC106 & !pattern0 & !pattern1 &  round0 & !round1
-         #  _LC100 &  _LC106 &  pattern0 & !pattern1 &  round0
-         #  _LC113 & !pattern0 &  pattern1 &  round0 &  round1
-         #  _LC100 &  _LC106 & !pattern0 & !pattern1 &  round1;
-
--- Node name is '|AnswerCheck:22|~257~1' 
 -- Equation name is '_LC119', type is buried 
 -- synthesized logic cell 
 _LC119   = LCELL( _EQ032 $  GND);
-  _EQ032 = !_LC100 &  _LC106 &  pattern0 &  pattern1 &  round0 & !round1
-         #  _LC103 &  pattern0 &  pattern1 & !round0 & !round1
-         #  _LC108 &  pattern0 &  pattern1 &  round0
-         #  _LC108 &  pattern0 &  pattern1 &  round1;
+  _EQ032 = !_LC081 &  _LC092 & !pattern0 & !pattern1 & !round0 & !round1
+         # !_LC081 & !_LC092 & !pattern0 & !pattern1 &  round0 & !round1
+         #  _LC081 &  _LC092 &  pattern0 & !pattern1 &  round0
+         #  _LC127 & !pattern0 &  pattern1 &  round0 &  round1
+         #  _LC081 &  _LC092 & !pattern0 & !pattern1 &  round1;
 
--- Node name is '|ClockDivider:66|T_FF:clkDiv1|D_FF:d1|:6' 
--- Equation name is '_LC031', type is buried 
-_LC031   = TFFE( VCC,  _EQ033,  VCC,  VCC,  VCC);
-  _EQ033 =  _X032 &  _X033;
-  _X032  = EXP( clk & !_LC026);
-  _X033  = EXP( clk &  reset);
-
--- Node name is '|ClockDivider:66|T_FF:clkDiv2|D_FF:d1|:6' 
--- Equation name is '_LC085', type is buried 
-_LC085   = TFFE( VCC, !_LC031,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:66|T_FF:clkDiv3|D_FF:d1|:6' 
--- Equation name is '_LC084', type is buried 
-_LC084   = TFFE( VCC, !_LC085,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:66|T_FF:clkDiv4|D_FF:d1|:6' 
--- Equation name is '_LC086', type is buried 
-_LC086   = TFFE( VCC, !_LC084,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:66|T_FF:clkDiv5|D_FF:d1|:6' 
--- Equation name is '_LC087', type is buried 
-_LC087   = TFFE( VCC, !_LC086,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:66|T_FF:clkDiv6|D_FF:d1|:6' 
--- Equation name is '_LC094', type is buried 
-_LC094   = TFFE( VCC, !_LC087,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:66|T_FF:clkDiv7|D_FF:d1|:6' 
--- Equation name is '_LC095', type is buried 
-_LC095   = TFFE( VCC, !_LC094,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:66|T_FF:clkDiv8|D_FF:d1|:6' 
--- Equation name is '_LC088', type is buried 
-_LC088   = TFFE( VCC, !_LC095,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:66|T_FF:clkDiv9|D_FF:d1|:6' 
--- Equation name is '_LC070', type is buried 
-_LC070   = TFFE( VCC, !_LC088,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv1|D_FF:d1|:6' 
--- Equation name is '_LC096', type is buried 
-_LC096   = TFFE( VCC, !_LC070,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv2|D_FF:d1|:6' 
--- Equation name is '_LC071', type is buried 
-_LC071   = TFFE( VCC, !_LC096,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv3|D_FF:d1|:6' 
--- Equation name is '_LC072', type is buried 
-_LC072   = TFFE( VCC, !_LC071,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv4|D_FF:d1|:6' 
--- Equation name is '_LC077', type is buried 
-_LC077   = TFFE( VCC, !_LC072,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv5|D_FF:d1|:6' 
--- Equation name is '_LC078', type is buried 
-_LC078   = TFFE( VCC, !_LC077,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv6|D_FF:d1|:6' 
--- Equation name is '_LC066', type is buried 
-_LC066   = TFFE( VCC, !_LC078,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv7|D_FF:d1|:6' 
--- Equation name is '_LC067', type is buried 
-_LC067   = TFFE( VCC, !_LC066,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv8|D_FF:d1|:6' 
--- Equation name is '_LC074', type is buried 
-_LC074   = TFFE( VCC, !_LC067,  VCC,  VCC,  VCC);
-
--- Node name is '|ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6' 
--- Equation name is '_LC079', type is buried 
-_LC079   = TFFE( VCC, !_LC074,  VCC,  VCC,  VCC);
-
--- Node name is '|StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node1' from file "addcore.tdf" line 164, column 16
--- Equation name is '_LC030', type is buried 
-_LC030   = LCELL(!scoreA1 $ !scoreA0);
-
--- Node name is '|StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node2' from file "addcore.tdf" line 164, column 16
--- Equation name is '_LC032', type is buried 
-_LC032   = LCELL( scoreA2 $  _EQ034);
-  _EQ034 =  scoreA0 &  scoreA1;
-
--- Node name is '|StateBox:60|lpm_add_sub:124|addcore:adder|addcore:adder0|result_node2' from file "addcore.tdf" line 164, column 16
--- Equation name is '_LC118', type is buried 
-_LC118   = LCELL( scoreB2 $  _EQ035);
-  _EQ035 =  scoreB0 &  scoreB1;
-
--- Node name is '|StateBox:60|:26' = '|StateBox:60|visit' 
--- Equation name is '_LC017', type is buried 
-_LC017   = DFFE( _EQ036 $  GND,  _LC079,  VCC,  VCC,  VCC);
-  _EQ036 = !_LC017 &  _LC110 &  _LC111 & !reset;
-
--- Node name is '|StateBox:60|:34' 
--- Equation name is '_LC020', type is buried 
-_LC020   = DFFE( _EQ037 $  GND,  _LC079,  VCC,  VCC,  VCC);
-  _EQ037 = !_LC017 &  _LC110 &  _LC111 & !reset
-         #  _LC020 &  reset;
-
--- Node name is '|StateBox:60|~39~1' 
--- Equation name is '_LC092', type is buried 
--- synthesized logic cell 
-_LC092   = LCELL( _EQ038 $  _EQ039);
-  _EQ038 =  _LC032 & !_LC082 & !_LC093 &  _LC109 & !pattern0 & !pattern1 & 
-             !round1 &  _X034 &  _X035
-         #  _LC032 & !_LC082 & !_LC093 & !_LC109 & !pattern0 & !pattern1 & 
-              round1 &  _X034 &  _X035
-         #  _LC032 & !_LC082 & !_LC093 &  _LC109 &  pattern1 &  round1 & 
-              _X034 &  _X035
-         #  _LC032 & !_LC082 & !_LC093 &  _LC109 &  pattern0 &  round1 & 
-              _X034 &  _X035;
-  _X034  = EXP(!_LC082 & !_LC102 & !pattern0 & !round0);
-  _X035  = EXP(!_LC082 &  pattern0 &  pattern1);
-  _EQ039 =  _LC032 & !_LC093 &  _X034 &  _X035;
-  _X034  = EXP(!_LC082 & !_LC102 & !pattern0 & !round0);
-  _X035  = EXP(!_LC082 &  pattern0 &  pattern1);
-
--- Node name is '|StateBox:60|~40~1' 
--- Equation name is '_LC083', type is buried 
--- synthesized logic cell 
-_LC083   = LCELL( _EQ040 $  _EQ041);
-  _EQ040 =  _LC030 & !_LC082 & !_LC093 & !_LC109 & !pattern0 & !pattern1 & 
-              round1 &  _X034 &  _X035
-         #  _LC030 & !_LC082 & !_LC093 &  _LC109 & !pattern0 & !pattern1 & 
-             !round1 &  _X034 &  _X035
-         #  _LC030 & !_LC082 & !_LC093 &  _LC109 &  pattern1 &  round1 & 
-              _X034 &  _X035
-         #  _LC030 & !_LC082 & !_LC093 &  _LC109 &  pattern0 &  round1 & 
-              _X034 &  _X035;
-  _X034  = EXP(!_LC082 & !_LC102 & !pattern0 & !round0);
-  _X035  = EXP(!_LC082 &  pattern0 &  pattern1);
-  _EQ041 =  _LC030 & !_LC093 &  _X034 &  _X035;
-  _X034  = EXP(!_LC082 & !_LC102 & !pattern0 & !round0);
-  _X035  = EXP(!_LC082 &  pattern0 &  pattern1);
-
--- Node name is '|StateBox:60|~41~1' 
--- Equation name is '_LC081', type is buried 
--- synthesized logic cell 
-_LC081   = LCELL( _EQ042 $  _EQ043);
-  _EQ042 = !_LC082 & !_LC093 & !_LC109 & !pattern0 & !pattern1 &  round1 & 
-             !scoreA0 &  _X034 &  _X035
-         # !_LC082 & !_LC093 &  _LC109 & !pattern0 & !pattern1 & !round1 & 
-             !scoreA0 &  _X034 &  _X035
-         # !_LC082 & !_LC093 &  _LC109 &  pattern1 &  round1 & !scoreA0 & 
-              _X034 &  _X035
-         # !_LC082 & !_LC093 &  _LC109 &  pattern0 &  round1 & !scoreA0 & 
-              _X034 &  _X035;
-  _X034  = EXP(!_LC082 & !_LC102 & !pattern0 & !round0);
-  _X035  = EXP(!_LC082 &  pattern0 &  pattern1);
-  _EQ043 = !_LC093 & !scoreA0 &  _X034 &  _X035;
-  _X034  = EXP(!_LC082 & !_LC102 & !pattern0 & !round0);
-  _X035  = EXP(!_LC082 &  pattern0 &  pattern1);
-
--- Node name is '|StateBox:60|~41~2' 
+-- Node name is '|AnswerCheck:22|~257~1' 
 -- Equation name is '_LC093', type is buried 
 -- synthesized logic cell 
-_LC093   = LCELL( _EQ044 $  GND);
-  _EQ044 = !_LC082 & !_LC102 &  pattern0 &  round0
-         # !_LC082 &  _LC102 &  pattern0 & !round0
-         # !_LC082 &  _LC102 & !pattern0 &  round0
-         # !_LC082 & !_LC109 &  pattern1 & !round1
-         # !_LC082 & !_LC109 &  pattern0 & !round1;
+_LC093   = LCELL( _EQ033 $  GND);
+  _EQ033 =  _LC081 & !_LC092 &  pattern0 &  pattern1 &  round0 & !round1
+         #  _LC083 &  pattern0 &  pattern1 & !round0 & !round1
+         #  _LC111 &  pattern0 &  pattern1 &  round0
+         #  _LC111 &  pattern0 &  pattern1 &  round1;
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv1|D_FF:d1|:6' 
+-- Equation name is '_LC009', type is buried 
+_LC009   = TFFE( VCC,  _EQ034,  VCC,  VCC,  VCC);
+  _EQ034 =  _X034 &  _X035;
+  _X034  = EXP( clk & !_LC030);
+  _X035  = EXP( clk &  reset);
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv2|D_FF:d1|:6' 
+-- Equation name is '_LC088', type is buried 
+_LC088   = TFFE( VCC, !_LC009,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv3|D_FF:d1|:6' 
+-- Equation name is '_LC095', type is buried 
+_LC095   = TFFE( VCC, !_LC088,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv4|D_FF:d1|:6' 
+-- Equation name is '_LC094', type is buried 
+_LC094   = TFFE( VCC, !_LC095,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv5|D_FF:d1|:6' 
+-- Equation name is '_LC096', type is buried 
+_LC096   = TFFE( VCC, !_LC094,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv6|D_FF:d1|:6' 
+-- Equation name is '_LC084', type is buried 
+_LC084   = TFFE( VCC, !_LC096,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv7|D_FF:d1|:6' 
+-- Equation name is '_LC102', type is buried 
+_LC102   = TFFE( VCC, !_LC084,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv8|D_FF:d1|:6' 
+-- Equation name is '_LC087', type is buried 
+_LC087   = TFFE( VCC, !_LC102,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:66|T_FF:clkDiv9|D_FF:d1|:6' 
+-- Equation name is '_LC109', type is buried 
+_LC109   = TFFE( VCC, !_LC087,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv1|D_FF:d1|:6' 
+-- Equation name is '_LC112', type is buried 
+_LC112   = TFFE( VCC, !_LC109,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv2|D_FF:d1|:6' 
+-- Equation name is '_LC098', type is buried 
+_LC098   = TFFE( VCC, !_LC112,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv3|D_FF:d1|:6' 
+-- Equation name is '_LC103', type is buried 
+_LC103   = TFFE( VCC, !_LC098,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv4|D_FF:d1|:6' 
+-- Equation name is '_LC067', type is buried 
+_LC067   = TFFE( VCC, !_LC103,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv5|D_FF:d1|:6' 
+-- Equation name is '_LC110', type is buried 
+_LC110   = TFFE( VCC, !_LC067,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv6|D_FF:d1|:6' 
+-- Equation name is '_LC069', type is buried 
+_LC069   = TFFE( VCC, !_LC110,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv7|D_FF:d1|:6' 
+-- Equation name is '_LC072', type is buried 
+_LC072   = TFFE( VCC, !_LC069,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv8|D_FF:d1|:6' 
+-- Equation name is '_LC079', type is buried 
+_LC079   = TFFE( VCC, !_LC072,  VCC,  VCC,  VCC);
+
+-- Node name is '|ClockDivider:69|T_FF:clkDiv9|D_FF:d1|:6' 
+-- Equation name is '_LC065', type is buried 
+_LC065   = TFFE( VCC, !_LC079,  VCC,  VCC,  VCC);
+
+-- Node name is '|StateBox:60|lpm_add_sub:123|addcore:adder|addcore:adder0|result_node2' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC018', type is buried 
+_LC018   = LCELL( scoreA2 $  _EQ035);
+  _EQ035 =  scoreA0 &  scoreA1;
+
+-- Node name is '|StateBox:60|lpm_add_sub:124|addcore:adder|addcore:adder0|result_node2' from file "addcore.tdf" line 164, column 16
+-- Equation name is '_LC125', type is buried 
+_LC125   = LCELL( scoreB2 $  _EQ036);
+  _EQ036 =  scoreB0 &  scoreB1;
+
+-- Node name is '|StateBox:60|:26' = '|StateBox:60|visit' 
+-- Equation name is '_LC020', type is buried 
+_LC020   = DFFE( _EQ037 $  GND,  _LC065,  VCC,  VCC,  VCC);
+  _EQ037 = !_LC020 &  _LC090 &  _LC091 & !reset;
+
+-- Node name is '|StateBox:60|:34' 
+-- Equation name is '_LC017', type is buried 
+_LC017   = DFFE( _EQ038 $  GND,  _LC065,  VCC,  VCC,  VCC);
+  _EQ038 = !_LC020 &  _LC090 &  _LC091 & !reset
+         #  _LC017 &  reset;
+
+-- Node name is '|StateBox:60|~39~1' 
+-- Equation name is '_LC077', type is buried 
+-- synthesized logic cell 
+_LC077   = LCELL( _EQ039 $  _EQ040);
+  _EQ039 =  _LC018 &  _LC082 & !_LC086 & !pattern0 & !pattern1 & !round1 & 
+              _X036 &  _X037 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042
+         #  _LC018 & !_LC082 & !_LC086 & !pattern0 & !pattern1 &  round1 & 
+              _X036 &  _X037 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042
+         #  _LC018 &  _LC082 & !_LC086 &  pattern1 &  round1 &  _X036 & 
+              _X037 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042
+         #  _LC018 &  _LC082 & !_LC086 &  pattern0 &  round1 &  _X036 & 
+              _X037 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042;
+  _X036  = EXP(!_LC086 & !_LC089 &  pattern0 &  round0);
+  _X037  = EXP(!_LC086 &  pattern0 &  pattern1);
+  _X038  = EXP(!_LC086 &  _LC089 &  pattern0 & !round0);
+  _X039  = EXP(!_LC086 &  _LC089 & !pattern0 &  round0);
+  _X040  = EXP(!_LC082 & !_LC086 &  pattern1 & !round1);
+  _X041  = EXP(!_LC082 & !_LC086 &  pattern0 & !round1);
+  _X042  = EXP(!_LC086 & !_LC089 & !pattern0 & !round0);
+  _EQ040 =  _LC018 &  _X036 &  _X037 &  _X038 &  _X039 &  _X040 &  _X041 & 
+              _X042;
+  _X036  = EXP(!_LC086 & !_LC089 &  pattern0 &  round0);
+  _X037  = EXP(!_LC086 &  pattern0 &  pattern1);
+  _X038  = EXP(!_LC086 &  _LC089 &  pattern0 & !round0);
+  _X039  = EXP(!_LC086 &  _LC089 & !pattern0 &  round0);
+  _X040  = EXP(!_LC082 & !_LC086 &  pattern1 & !round1);
+  _X041  = EXP(!_LC082 & !_LC086 &  pattern0 & !round1);
+  _X042  = EXP(!_LC086 & !_LC089 & !pattern0 & !round0);
 
 -- Node name is '|StateBox:60|~43~1' 
--- Equation name is '_LC091', type is buried 
+-- Equation name is '_LC032', type is buried 
 -- synthesized logic cell 
-_LC091   = LCELL( _EQ045 $  _EQ046);
-  _EQ045 = !_LC082 & !_LC102 &  _LC109 & !pattern0 & !pattern1 &  round0 & 
-              round1 &  scoreA2 &  _X036 &  _X037
-         # !_LC082 &  _LC102 &  _LC109 & !pattern0 & !pattern1 & !round0 & 
-              round1 &  scoreA2 &  _X036 &  _X037
-         # !_LC082 & !_LC102 & !_LC109 & !pattern0 & !pattern1 &  round0 & 
-             !round1 &  scoreA2 &  _X036 &  _X037
-         # !_LC082 &  _LC102 & !_LC109 & !pattern0 & !pattern1 & !round0 & 
-             !round1 &  scoreA2 &  _X036 &  _X037;
-  _X036  = EXP( _LC098 & !pattern1);
-  _X037  = EXP( _LC073 & !pattern0 &  pattern1);
-  _EQ046 = !_LC082 &  scoreA2 &  _X036 &  _X037;
-  _X036  = EXP( _LC098 & !pattern1);
-  _X037  = EXP( _LC073 & !pattern0 &  pattern1);
-
--- Node name is '|StateBox:60|~48~1' 
--- Equation name is '_LC090', type is buried 
--- synthesized logic cell 
-_LC090   = LCELL( _EQ047 $  _EQ048);
-  _EQ047 = !_LC081 & !_LC089 &  _LC102 & !_LC109 &  pattern0 & !pattern1 & 
-              round0 &  round1 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042
-         # !_LC081 & !_LC089 &  _LC102 &  _LC109 &  pattern0 & !pattern1 & 
-              round0 & !round1 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042
-         # !_LC081 & !_LC089 & !_LC102 &  _LC109 & !pattern0 & !pattern1 & 
-              round0 &  round1 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042
-         # !_LC081 & !_LC089 &  _LC102 &  _LC109 & !pattern0 & !pattern1 & 
-             !round0 &  round1 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042;
-  _X038  = EXP(!_LC081 & !_LC102 &  _LC109 &  pattern0 & !pattern1 & !round0 & 
-             !round1);
-  _X039  = EXP(!_LC081 & !_LC102 & !_LC109 & !pattern0 & !pattern1 &  round0 & 
-             !round1);
-  _X040  = EXP(!_LC081 & !scoreA0);
-  _X041  = EXP(!_LC081 &  _LC082);
-  _X042  = EXP(!_LC081 &  _LC102 & !_LC109 & !pattern0 & !pattern1 & !round0 & 
-             !round1);
-  _EQ048 = !_LC089 &  _X038 &  _X039 &  _X040 &  _X041 &  _X042;
-  _X038  = EXP(!_LC081 & !_LC102 &  _LC109 &  pattern0 & !pattern1 & !round0 & 
-             !round1);
-  _X039  = EXP(!_LC081 & !_LC102 & !_LC109 & !pattern0 & !pattern1 &  round0 & 
-             !round1);
-  _X040  = EXP(!_LC081 & !scoreA0);
-  _X041  = EXP(!_LC081 &  _LC082);
-  _X042  = EXP(!_LC081 &  _LC102 & !_LC109 & !pattern0 & !pattern1 & !round0 & 
-             !round1);
-
--- Node name is '|StateBox:60|~48~2' 
--- Equation name is '_LC089', type is buried 
--- synthesized logic cell 
-_LC089   = LCELL( _EQ049 $  GND);
-  _EQ049 = !_LC081 & !_LC102 & !_LC109 & !pattern0 &  pattern1 &  round0 & 
-              round1
-         # !_LC081 & !_LC102 &  _LC109 & !pattern0 &  pattern1 &  round0 & 
-             !round1
-         # !_LC081 &  _LC102 & !_LC109 & !pattern0 &  pattern1 & !round0 & 
-              round1
-         # !_LC081 &  _LC102 &  _LC109 & !pattern0 &  pattern1 & !round0 & 
-             !round1
-         # !_LC081 & !_LC102 & !_LC109 &  pattern0 & !pattern1 & !round0 & 
-              round1;
+_LC032   = LCELL( _EQ041 $  _EQ042);
+  _EQ041 =  _LC082 & !_LC086 & !_LC089 & !pattern0 & !pattern1 &  round0 & 
+              round1 &  scoreA2 &  _X043 &  _X044
+         #  _LC082 & !_LC086 &  _LC089 & !pattern0 & !pattern1 & !round0 & 
+              round1 &  scoreA2 &  _X043 &  _X044
+         # !_LC082 & !_LC086 & !_LC089 & !pattern0 & !pattern1 &  round0 & 
+             !round1 &  scoreA2 &  _X043 &  _X044
+         # !_LC082 & !_LC086 &  _LC089 & !pattern0 & !pattern1 & !round0 & 
+             !round1 &  scoreA2 &  _X043 &  _X044;
+  _X043  = EXP( _LC116 & !pattern1);
+  _X044  = EXP( _LC106 & !pattern0 &  pattern1);
+  _EQ042 = !_LC086 &  scoreA2 &  _X043 &  _X044;
+  _X043  = EXP( _LC116 & !pattern1);
+  _X044  = EXP( _LC106 & !pattern0 &  pattern1);
 
 -- Node name is '|StateBox:60|~56~1' 
--- Equation name is '_LC121', type is buried 
+-- Equation name is '_LC115', type is buried 
 -- synthesized logic cell 
-_LC121   = LCELL( _EQ050 $  scoreA2);
-  _EQ050 = !_LC017 & !_LC091 & !_LC092 &  _LC110 &  _LC111 &  scoreA2
-         # !_LC017 &  _LC091 &  _LC110 &  _LC111 & !scoreA2
-         # !_LC017 &  _LC092 &  _LC110 &  _LC111 & !scoreA2;
+_LC115   = LCELL( _EQ043 $  scoreA2);
+  _EQ043 = !_LC020 & !_LC032 & !_LC077 &  _LC090 &  _LC091 &  scoreA2
+         # !_LC020 &  _LC032 &  _LC090 &  _LC091 & !scoreA2
+         # !_LC020 &  _LC077 &  _LC090 &  _LC091 & !scoreA2;
 
 -- Node name is '|StateBox:60|~57~1' 
 -- Equation name is '_LC023', type is buried 
 -- synthesized logic cell 
-_LC023   = LCELL( _EQ051 $  _EQ052);
-  _EQ051 = !_LC017 & !_LC018 & !_LC022 & !_LC083 &  _LC102 & !_LC109 & 
-              _LC110 &  _LC111 &  pattern0 & !pattern1 &  round0 &  round1 & 
-              _X043 &  _X044 &  _X045
-         # !_LC017 & !_LC018 & !_LC022 & !_LC083 &  _LC102 &  _LC109 & 
-              _LC110 &  _LC111 &  pattern0 & !pattern1 &  round0 & !round1 & 
-              _X043 &  _X044 &  _X045
-         # !_LC017 & !_LC018 & !_LC022 & !_LC083 & !_LC102 &  _LC109 & 
-              _LC110 &  _LC111 & !pattern0 & !pattern1 &  round0 &  round1 & 
-              _X043 &  _X044 &  _X045
-         # !_LC017 & !_LC018 & !_LC022 & !_LC083 &  _LC102 &  _LC109 & 
-              _LC110 &  _LC111 & !pattern0 & !pattern1 & !round0 &  round1 & 
-              _X043 &  _X044 &  _X045;
-  _X043  = EXP(!_LC083 & !scoreA1);
-  _X044  = EXP(!_LC110 & !scoreA1);
-  _X045  = EXP(!_LC111 & !scoreA1);
-  _EQ052 = !_LC018 & !_LC022 &  _X043 &  _X044 &  _X045;
-  _X043  = EXP(!_LC083 & !scoreA1);
-  _X044  = EXP(!_LC110 & !scoreA1);
-  _X045  = EXP(!_LC111 & !scoreA1);
+_LC023   = LCELL( _EQ044 $ !scoreA1);
+  _EQ044 = !_LC026 &  _X045 &  _X046;
+  _X045  = EXP(!_LC020 &  _LC090 &  _LC091 &  _LC116 & !pattern1 &  scoreA0);
+  _X046  = EXP(!_LC020 &  _LC086 &  _LC090 &  _LC091 &  scoreA0);
 
 -- Node name is '|StateBox:60|~57~2' 
--- Equation name is '_LC022', type is buried 
+-- Equation name is '_LC026', type is buried 
 -- synthesized logic cell 
-_LC022   = LCELL( _EQ053 $  GND);
-  _EQ053 = !_LC017 & !_LC083 & !_LC102 & !_LC109 &  _LC110 &  _LC111 & 
-             !pattern0 &  pattern1 &  round0 &  round1
-         # !_LC017 & !_LC083 & !_LC102 &  _LC109 &  _LC110 &  _LC111 & 
-             !pattern0 &  pattern1 &  round0 & !round1
-         # !_LC017 & !_LC083 &  _LC102 & !_LC109 &  _LC110 &  _LC111 & 
-             !pattern0 &  pattern1 & !round0 &  round1
-         # !_LC017 & !_LC083 &  _LC102 &  _LC109 &  _LC110 &  _LC111 & 
-             !pattern0 &  pattern1 & !round0 & !round1
-         # !_LC017 & !_LC083 & !_LC102 & !_LC109 &  _LC110 &  _LC111 & 
-              pattern0 & !pattern1 & !round0 &  round1;
-
--- Node name is '|StateBox:60|~57~3' 
--- Equation name is '_LC018', type is buried 
--- synthesized logic cell 
-_LC018   = LCELL( _EQ054 $  GND);
-  _EQ054 = !_LC017 & !_LC083 & !_LC102 &  _LC109 &  _LC110 &  _LC111 & 
-              pattern0 & !pattern1 & !round0 & !round1
-         # !_LC017 & !_LC083 & !_LC102 & !_LC109 &  _LC110 &  _LC111 & 
-             !pattern0 & !pattern1 &  round0 & !round1
-         # !_LC017 & !_LC083 &  _LC102 & !_LC109 &  _LC110 &  _LC111 & 
-             !pattern0 & !pattern1 & !round0 & !round1
-         # !_LC017 &  _LC082 & !_LC083 &  _LC110 &  _LC111
-         #  _LC017 & !scoreA1;
+_LC026   = LCELL( _EQ045 $  GND);
+  _EQ045 = !_LC020 &  _LC082 & !_LC089 &  _LC090 &  _LC091 & !pattern0 & 
+             !pattern1 &  round0 &  round1 &  scoreA0
+         # !_LC020 &  _LC082 &  _LC089 &  _LC090 &  _LC091 & !pattern0 & 
+             !pattern1 & !round0 &  round1 &  scoreA0
+         # !_LC020 & !_LC082 & !_LC089 &  _LC090 &  _LC091 & !pattern0 & 
+             !pattern1 &  round0 & !round1 &  scoreA0
+         # !_LC020 & !_LC082 &  _LC089 &  _LC090 &  _LC091 & !pattern0 & 
+             !pattern1 & !round0 & !round1 &  scoreA0
+         # !_LC020 &  _LC090 &  _LC091 &  _LC106 & !pattern0 &  pattern1 & 
+              scoreA0;
 
 -- Node name is '|StateBox:60|~58~1' 
 -- Equation name is '_LC028', type is buried 
 -- synthesized logic cell 
-_LC028   = LCELL( _EQ055 $  VCC);
-  _EQ055 = !_LC017 &  _LC110 &  _LC111 &  _X046
-         # !scoreA0 &  _X046;
-  _X046  = EXP(!_LC017 &  _LC090 &  _LC110 &  _LC111);
+_LC028   = LCELL( _EQ046 $ !scoreA0);
+  _EQ046 = !_LC031 &  _X047 &  _X048;
+  _X047  = EXP(!_LC020 &  _LC090 &  _LC091 &  _LC116 & !pattern1);
+  _X048  = EXP(!_LC020 &  _LC086 &  _LC090 &  _LC091);
+
+-- Node name is '|StateBox:60|~58~2' 
+-- Equation name is '_LC031', type is buried 
+-- synthesized logic cell 
+_LC031   = LCELL( _EQ047 $  GND);
+  _EQ047 = !_LC020 &  _LC082 & !_LC089 &  _LC090 &  _LC091 & !pattern0 & 
+             !pattern1 &  round0 &  round1
+         # !_LC020 &  _LC082 &  _LC089 &  _LC090 &  _LC091 & !pattern0 & 
+             !pattern1 & !round0 &  round1
+         # !_LC020 & !_LC082 & !_LC089 &  _LC090 &  _LC091 & !pattern0 & 
+             !pattern1 &  round0 & !round1
+         # !_LC020 & !_LC082 &  _LC089 &  _LC090 &  _LC091 & !pattern0 & 
+             !pattern1 & !round0 & !round1
+         # !_LC020 &  _LC090 &  _LC091 &  _LC106 & !pattern0 &  pattern1;
 
 -- Node name is '|StateBox:60|~72~1' 
--- Equation name is '_LC128', type is buried 
+-- Equation name is '_LC097', type is buried 
 -- synthesized logic cell 
-_LC128   = LCELL( _EQ056 $  _EQ057);
-  _EQ056 =  _LC106 &  _LC118 & !_LC119 & !_LC127 & !pattern0 & !pattern1 & 
-             !round1 &  _X047 &  _X048
-         # !_LC106 &  _LC118 & !_LC119 & !_LC127 & !pattern0 & !pattern1 & 
-              round1 &  _X047 &  _X048
-         #  _LC106 &  _LC118 & !_LC119 & !_LC127 &  pattern1 &  round1 & 
-              _X047 &  _X048
-         #  _LC106 &  _LC118 & !_LC119 & !_LC127 &  pattern0 &  round1 & 
-              _X047 &  _X048;
-  _X047  = EXP(!_LC100 & !_LC119 & !pattern0 & !round0);
-  _X048  = EXP(!_LC119 &  pattern0 &  pattern1);
-  _EQ057 =  _LC118 & !_LC127 &  _X047 &  _X048;
-  _X047  = EXP(!_LC100 & !_LC119 & !pattern0 & !round0);
-  _X048  = EXP(!_LC119 &  pattern0 &  pattern1);
+_LC097   = LCELL( _EQ048 $  _EQ049);
+  _EQ048 =  _LC081 & !_LC093 & !_LC118 &  _LC125 & !pattern0 & !pattern1 & 
+             !round1 &  _X049 &  _X050
+         # !_LC081 & !_LC093 & !_LC118 &  _LC125 & !pattern0 & !pattern1 & 
+              round1 &  _X049 &  _X050
+         #  _LC081 & !_LC093 & !_LC118 &  _LC125 &  pattern1 &  round1 & 
+              _X049 &  _X050
+         #  _LC081 & !_LC093 & !_LC118 &  _LC125 &  pattern0 &  round1 & 
+              _X049 &  _X050;
+  _X049  = EXP(!_LC092 & !_LC093 & !pattern0 & !round0);
+  _X050  = EXP(!_LC093 &  pattern0 &  pattern1);
+  _EQ049 = !_LC118 &  _LC125 &  _X049 &  _X050;
+  _X049  = EXP(!_LC092 & !_LC093 & !pattern0 & !round0);
+  _X050  = EXP(!_LC093 &  pattern0 &  pattern1);
 
 -- Node name is '|StateBox:60|~72~2' 
--- Equation name is '_LC127', type is buried 
+-- Equation name is '_LC118', type is buried 
 -- synthesized logic cell 
-_LC127   = LCELL( _EQ058 $  GND);
-  _EQ058 = !_LC100 & !_LC119 &  pattern0 &  round0
-         #  _LC100 & !_LC119 &  pattern0 & !round0
-         #  _LC100 & !_LC119 & !pattern0 &  round0
-         # !_LC106 & !_LC119 &  pattern1 & !round1
-         # !_LC106 & !_LC119 &  pattern0 & !round1;
+_LC118   = LCELL( _EQ050 $  GND);
+  _EQ050 = !_LC092 & !_LC093 &  pattern0 &  round0
+         #  _LC092 & !_LC093 &  pattern0 & !round0
+         #  _LC092 & !_LC093 & !pattern0 &  round0
+         # !_LC081 & !_LC093 &  pattern1 & !round1
+         # !_LC081 & !_LC093 &  pattern0 & !round1;
 
 -- Node name is '|StateBox:60|~76~1' 
--- Equation name is '_LC126', type is buried 
+-- Equation name is '_LC120', type is buried 
 -- synthesized logic cell 
-_LC126   = LCELL( _EQ059 $  _EQ060);
-  _EQ059 = !_LC100 &  _LC106 & !_LC119 & !pattern0 & !pattern1 &  round0 & 
-              round1 &  scoreB2 &  _X049 &  _X050
-         #  _LC100 &  _LC106 & !_LC119 & !pattern0 & !pattern1 & !round0 & 
-              round1 &  scoreB2 &  _X049 &  _X050
-         # !_LC100 & !_LC106 & !_LC119 & !pattern0 & !pattern1 &  round0 & 
-             !round1 &  scoreB2 &  _X049 &  _X050
-         #  _LC100 & !_LC106 & !_LC119 & !pattern0 & !pattern1 & !round0 & 
-             !round1 &  scoreB2 &  _X049 &  _X050;
-  _X049  = EXP( _LC115 & !pattern1);
-  _X050  = EXP( _LC113 & !pattern0 &  pattern1);
-  _EQ060 = !_LC119 &  scoreB2 &  _X049 &  _X050;
-  _X049  = EXP( _LC115 & !pattern1);
-  _X050  = EXP( _LC113 & !pattern0 &  pattern1);
+_LC120   = LCELL( _EQ051 $  _EQ052);
+  _EQ051 =  _LC081 & !_LC092 & !_LC093 & !pattern0 & !pattern1 &  round0 & 
+              round1 &  scoreB2 &  _X051 &  _X052
+         #  _LC081 &  _LC092 & !_LC093 & !pattern0 & !pattern1 & !round0 & 
+              round1 &  scoreB2 &  _X051 &  _X052
+         # !_LC081 & !_LC092 & !_LC093 & !pattern0 & !pattern1 &  round0 & 
+             !round1 &  scoreB2 &  _X051 &  _X052
+         # !_LC081 &  _LC092 & !_LC093 & !pattern0 & !pattern1 & !round0 & 
+             !round1 &  scoreB2 &  _X051 &  _X052;
+  _X051  = EXP( _LC114 & !pattern1);
+  _X052  = EXP( _LC127 & !pattern0 &  pattern1);
+  _EQ052 = !_LC093 &  scoreB2 &  _X051 &  _X052;
+  _X051  = EXP( _LC114 & !pattern1);
+  _X052  = EXP( _LC127 & !pattern0 &  pattern1);
 
 -- Node name is '|StateBox:60|~89~1' 
--- Equation name is '_LC125', type is buried 
+-- Equation name is '_LC121', type is buried 
 -- synthesized logic cell 
-_LC125   = LCELL( _EQ061 $  scoreB2);
-  _EQ061 = !_LC017 &  _LC110 &  _LC111 & !_LC126 & !_LC128 &  scoreB2
-         # !_LC017 &  _LC110 &  _LC111 &  _LC126 & !scoreB2
-         # !_LC017 &  _LC110 &  _LC111 &  _LC128 & !scoreB2;
+_LC121   = LCELL( _EQ053 $  scoreB2);
+  _EQ053 = !_LC020 &  _LC090 &  _LC091 & !_LC097 & !_LC120 &  scoreB2
+         # !_LC020 &  _LC090 &  _LC091 &  _LC120 & !scoreB2
+         # !_LC020 &  _LC090 &  _LC091 &  _LC097 & !scoreB2;
 
 -- Node name is '|StateBox:60|~90~1' 
 -- Equation name is '_LC124', type is buried 
 -- synthesized logic cell 
-_LC124   = LCELL( _EQ062 $ !scoreB1);
-  _EQ062 = !_LC122 &  _X051 &  _X052;
-  _X051  = EXP(!_LC017 &  _LC110 &  _LC111 &  _LC115 & !pattern1 &  scoreB0);
-  _X052  = EXP(!_LC017 &  _LC110 &  _LC111 &  _LC119 &  scoreB0);
+_LC124   = LCELL( _EQ054 $ !scoreB1);
+  _EQ054 = !_LC117 &  _X053 &  _X054;
+  _X053  = EXP(!_LC020 &  _LC090 &  _LC091 &  _LC114 & !pattern1 &  scoreB0);
+  _X054  = EXP(!_LC020 &  _LC090 &  _LC091 &  _LC093 &  scoreB0);
 
 -- Node name is '|StateBox:60|~90~2' 
--- Equation name is '_LC122', type is buried 
+-- Equation name is '_LC117', type is buried 
 -- synthesized logic cell 
-_LC122   = LCELL( _EQ063 $  GND);
-  _EQ063 = !_LC017 & !_LC100 &  _LC106 &  _LC110 &  _LC111 & !pattern0 & 
+_LC117   = LCELL( _EQ055 $  GND);
+  _EQ055 = !_LC020 &  _LC081 &  _LC090 &  _LC091 & !_LC092 & !pattern0 & 
              !pattern1 &  round0 &  round1 &  scoreB0
-         # !_LC017 &  _LC100 &  _LC106 &  _LC110 &  _LC111 & !pattern0 & 
+         # !_LC020 &  _LC081 &  _LC090 &  _LC091 &  _LC092 & !pattern0 & 
              !pattern1 & !round0 &  round1 &  scoreB0
-         # !_LC017 & !_LC100 & !_LC106 &  _LC110 &  _LC111 & !pattern0 & 
+         # !_LC020 & !_LC081 &  _LC090 &  _LC091 & !_LC092 & !pattern0 & 
              !pattern1 &  round0 & !round1 &  scoreB0
-         # !_LC017 &  _LC100 & !_LC106 &  _LC110 &  _LC111 & !pattern0 & 
+         # !_LC020 & !_LC081 &  _LC090 &  _LC091 &  _LC092 & !pattern0 & 
              !pattern1 & !round0 & !round1 &  scoreB0
-         # !_LC017 &  _LC110 &  _LC111 &  _LC113 & !pattern0 &  pattern1 & 
+         # !_LC020 &  _LC090 &  _LC091 &  _LC127 & !pattern0 &  pattern1 & 
               scoreB0;
 
 -- Node name is '|StateBox:60|~91~1' 
--- Equation name is '_LC120', type is buried 
+-- Equation name is '_LC123', type is buried 
 -- synthesized logic cell 
-_LC120   = LCELL( _EQ064 $ !scoreB0);
-  _EQ064 = !_LC116 &  _X053 &  _X054;
-  _X053  = EXP(!_LC017 &  _LC110 &  _LC111 &  _LC115 & !pattern1);
-  _X054  = EXP(!_LC017 &  _LC110 &  _LC111 &  _LC119);
+_LC123   = LCELL( _EQ056 $ !scoreB0);
+  _EQ056 = !_LC113 &  _X055 &  _X056;
+  _X055  = EXP(!_LC020 &  _LC090 &  _LC091 &  _LC114 & !pattern1);
+  _X056  = EXP(!_LC020 &  _LC090 &  _LC091 &  _LC093);
 
 -- Node name is '|StateBox:60|~91~2' 
--- Equation name is '_LC116', type is buried 
+-- Equation name is '_LC113', type is buried 
 -- synthesized logic cell 
-_LC116   = LCELL( _EQ065 $  GND);
-  _EQ065 = !_LC017 & !_LC100 &  _LC106 &  _LC110 &  _LC111 & !pattern0 & 
+_LC113   = LCELL( _EQ057 $  GND);
+  _EQ057 = !_LC020 &  _LC081 &  _LC090 &  _LC091 & !_LC092 & !pattern0 & 
              !pattern1 &  round0 &  round1
-         # !_LC017 &  _LC100 &  _LC106 &  _LC110 &  _LC111 & !pattern0 & 
+         # !_LC020 &  _LC081 &  _LC090 &  _LC091 &  _LC092 & !pattern0 & 
              !pattern1 & !round0 &  round1
-         # !_LC017 & !_LC100 & !_LC106 &  _LC110 &  _LC111 & !pattern0 & 
+         # !_LC020 & !_LC081 &  _LC090 &  _LC091 & !_LC092 & !pattern0 & 
              !pattern1 &  round0 & !round1
-         # !_LC017 &  _LC100 & !_LC106 &  _LC110 &  _LC111 & !pattern0 & 
+         # !_LC020 & !_LC081 &  _LC090 &  _LC091 &  _LC092 & !pattern0 & 
              !pattern1 & !round0 & !round1
-         # !_LC017 &  _LC110 &  _LC111 &  _LC113 & !pattern0 &  pattern1;
-
--- Node name is '|StateBox:60|~113~1' 
--- Equation name is '_LC114', type is buried 
--- synthesized logic cell 
-_LC114   = LCELL( _EQ066 $  round0);
-  _EQ066 = !_LC017 &  _LC110 &  _LC111;
+         # !_LC020 &  _LC090 &  _LC091 &  _LC127 & !pattern0 &  pattern1;
 
 -- Node name is '|StateBox:60|:120' 
--- Equation name is '_LC026', type is buried 
-_LC026   = TFFE( _EQ067,  _LC079,  VCC,  VCC,  VCC);
-  _EQ067 = !_LC017 & !_LC026 &  _LC110 &  _LC111 & !reset &  round0 &  round1
-         # !_LC017 &  _LC026 &  _LC110 &  _LC111 &  round0 &  round1
-         #  _LC026 &  reset;
+-- Equation name is '_LC030', type is buried 
+_LC030   = TFFE( _EQ058,  _LC065,  VCC,  VCC,  VCC);
+  _EQ058 = !_LC020 & !_LC030 &  _LC090 &  _LC091 & !reset &  round0 &  round1
+         # !_LC020 &  _LC030 &  _LC090 &  _LC091 &  round0 &  round1
+         #  _LC030 &  reset;
 
--- Node name is '|UserBuffer:18|~33~1' 
--- Equation name is '_LC102', type is buried 
+-- Node name is '|UserBuffer:78|~32~1' 
+-- Equation name is '_LC089', type is buried 
 -- synthesized logic cell 
-_LC102   = LCELL( _EQ068 $  GND);
-  _EQ068 = !_LC020 &  _LC102 &  pa_a &  pa_c
+_LC089   = LCELL( _EQ059 $  GND);
+  _EQ059 = !_LC017 &  _LC089 &  pa_a &  pa_c
          #  pa_a &  pa_c & !pa_d
          #  pa_a & !pa_b;
 
--- Node name is '|UserBuffer:18|~49~1' 
--- Equation name is '_LC109', type is buried 
+-- Node name is '|UserBuffer:78|~48~1' 
+-- Equation name is '_LC082', type is buried 
 -- synthesized logic cell 
-_LC109   = LCELL( _EQ069 $  GND);
-  _EQ069 = !_LC020 &  _LC109 &  pa_a &  pa_b
+_LC082   = LCELL( _EQ060 $  GND);
+  _EQ060 = !_LC017 &  _LC082 &  pa_a &  pa_b
          #  pa_a &  pa_b & !pa_d
          #  pa_a &  pa_b & !pa_c;
 
--- Node name is '|UserBuffer:18|~65~1' 
--- Equation name is '_LC110', type is buried 
+-- Node name is '|UserBuffer:78|~64~1' 
+-- Equation name is '_LC090', type is buried 
 -- synthesized logic cell 
-_LC110   = LCELL( _EQ070 $  VCC);
-  _EQ070 =  _LC020 &  pa_a &  pa_b &  pa_c &  pa_d
-         # !_LC110 &  pa_a &  pa_b &  pa_c &  pa_d;
+_LC090   = LCELL( _EQ061 $  VCC);
+  _EQ061 =  _LC017 &  pa_a &  pa_b &  pa_c &  pa_d
+         # !_LC090 &  pa_a &  pa_b &  pa_c &  pa_d;
 
--- Node name is '|UserBuffer:20|~33~1' 
--- Equation name is '_LC100', type is buried 
+-- Node name is '|UserBuffer:80|~32~1' 
+-- Equation name is '_LC092', type is buried 
 -- synthesized logic cell 
-_LC100   = LCELL( _EQ071 $  GND);
-  _EQ071 = !_LC020 &  _LC100 &  pb_a &  pb_c
+_LC092   = LCELL( _EQ062 $  GND);
+  _EQ062 = !_LC017 &  _LC092 &  pb_a &  pb_c
          #  pb_a &  pb_c & !pb_d
          #  pb_a & !pb_b;
 
--- Node name is '|UserBuffer:20|~49~1' 
--- Equation name is '_LC106', type is buried 
+-- Node name is '|UserBuffer:80|~48~1' 
+-- Equation name is '_LC081', type is buried 
 -- synthesized logic cell 
-_LC106   = LCELL( _EQ072 $  GND);
-  _EQ072 = !_LC020 &  _LC106 &  pb_a &  pb_b
+_LC081   = LCELL( _EQ063 $  GND);
+  _EQ063 = !_LC017 &  _LC081 &  pb_a &  pb_b
          #  pb_a &  pb_b & !pb_d
          #  pb_a &  pb_b & !pb_c;
 
--- Node name is '|UserBuffer:20|~65~1' 
--- Equation name is '_LC111', type is buried 
+-- Node name is '|UserBuffer:80|~64~1' 
+-- Equation name is '_LC091', type is buried 
 -- synthesized logic cell 
-_LC111   = LCELL( _EQ073 $  VCC);
-  _EQ073 =  _LC020 &  pb_a &  pb_b &  pb_c &  pb_d
-         # !_LC111 &  pb_a &  pb_b &  pb_c &  pb_d;
+_LC091   = LCELL( _EQ064 $  VCC);
+  _EQ064 =  _LC017 &  pb_a &  pb_b &  pb_c &  pb_d
+         # !_LC091 &  pb_a &  pb_b &  pb_c &  pb_d;
 
 
 
 --     Shareable expanders that are duplicated in multiple LABs:
---    _X001 occurs in LABs E, H
---    _X003 occurs in LABs D, E
---    _X005 occurs in LABs D, E
---    _X006 occurs in LABs D, E
---    _X007 occurs in LABs D, E
---    _X016 occurs in LABs E, G
+--    _X001 occurs in LABs G, H
+--    _X014 occurs in LABs B, G
 
 
 
@@ -1652,18 +1514,18 @@ VHDL Netlist Writer                       = off
 Compilation Times
 -----------------
 
-   Compiler Netlist Extractor             00:00:00
+   Compiler Netlist Extractor             00:00:01
    Database Builder                       00:00:00
-   Logic Synthesizer                      00:00:04
-   Partitioner                            00:00:01
+   Logic Synthesizer                      00:00:03
+   Partitioner                            00:00:00
    Fitter                                 00:00:00
-   Timing SNF Extractor                   00:00:00
-   Assembler                              00:00:01
+   Timing SNF Extractor                   00:00:01
+   Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:06
+   Total Time                             00:00:05
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 14,093K
+Peak memory allocated during compilation  = 13,688K
