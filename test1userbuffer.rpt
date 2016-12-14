@@ -1,0 +1,685 @@
+Project Information                        e:\finalproject\test1userbuffer.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 12/15/2016 02:59:13
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was unsuccessful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+test1userbuffer
+      EPM7128SLC84-15      12       12       0      16      13          No Fit
+
+User Pins:                 12       12       0  
+
+
+
+Project Information                        e:\finalproject\test1userbuffer.rpt
+
+** PROJECT COMPILATION MESSAGES **
+
+Warning: GLOBAL primitive on node 'reset' feeds logic -- non-global signal usage may result
+Warning: Primitive 'toGround' is stuck at GND
+Info: Reserved unused input pin 'clk' for future use because it has a pin assignment -- pin is tri-stated and must be connected to your board
+Error: No fit found, generating Report File
+
+(See individual chip error summaries for additional information)
+
+Project Information                        e:\finalproject\test1userbuffer.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'reset' chosen for auto global Clock
+
+
+Project Information                        e:\finalproject\test1userbuffer.rpt
+
+** PIN/LOCATION/CHIP ASSIGNMENTS **
+
+                  Actual                  
+    User       Assignments                
+Assignments   (if different)     Node Name
+
+test1userbuffer@83---------        clk
+test1userbuffer@68---------        CorrectA
+test1userbuffer@67---------        correctB
+test1userbuffer@54---------        pa_a
+test1userbuffer@55---------        pa_b
+test1userbuffer@56---------        pa_c
+test1userbuffer@57---------        pa_d
+test1userbuffer@21---------        pap
+test1userbuffer@49---------        patternA
+test1userbuffer@50---------        patternB
+test1userbuffer@20---------        pa0
+test1userbuffer@18---------        pa1
+test1userbuffer@58---------        pb_a
+test1userbuffer@60---------        pb_b
+test1userbuffer@61---------        pb_c
+test1userbuffer@63---------        pb_d
+test1userbuffer@16---------        pbp
+test1userbuffer@15---------        pb0
+test1userbuffer@12---------        pb1
+test1userbuffer@64---------        pressTwo
+test1userbuffer@51---------        reset
+test1userbuffer@69---------        round0
+test1userbuffer@70---------        round1
+test1userbuffer@52---------        toGround
+
+
+Project Information                        e:\finalproject\test1userbuffer.rpt
+
+** FILE HIERARCHY **
+
+
+
+|userbuffer:4|
+|userbuffer:3|
+|clockdivider:21|
+|clockdivider:21|t_ff:clkDiv1|
+|clockdivider:21|t_ff:clkDiv1|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv2|
+|clockdivider:21|t_ff:clkDiv2|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv3|
+|clockdivider:21|t_ff:clkDiv3|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv4|
+|clockdivider:21|t_ff:clkDiv4|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv5|
+|clockdivider:21|t_ff:clkDiv5|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv6|
+|clockdivider:21|t_ff:clkDiv6|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv7|
+|clockdivider:21|t_ff:clkDiv7|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv8|
+|clockdivider:21|t_ff:clkDiv8|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv9|
+|clockdivider:21|t_ff:clkDiv9|d_ff:d1|
+|clockdivider:21|t_ff:clkDiv10|
+|clockdivider:21|t_ff:clkDiv10|d_ff:d1|
+|readybox:24|
+|answercheck:31|
+|answercheck:32|
+|t_latch:55|
+|t_latch:56|
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+***** Logic for device 'test1userbuffer' contains errors -- see ERROR SUMMARY.
+
+
+
+
+Device: EPM7128SLC84-15
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+    MultiVolt I/O                              = OFF
+
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** ERROR SUMMARY **
+
+Error: Illegal assignment -- global clock 'reset' on pin 51
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     1/16(  6%)   1/ 8( 12%)   0/16(  0%)   6/36( 16%) 
+B:    LC17 - LC32     5/16( 31%)   6/ 8( 75%)   0/16(  0%)  14/36( 38%) 
+C:    LC33 - LC48     0/16(  0%)   1/ 8( 12%)   0/16(  0%)   0/36(  0%) 
+D:    LC49 - LC64     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
+E:    LC65 - LC80     1/16(  6%)   4/ 8( 50%)   0/16(  0%)   0/36(  0%) 
+F:    LC81 - LC96     0/16(  0%)   8/ 8(100%)   0/16(  0%)   0/36(  0%) 
+G:   LC97 - LC112     5/16( 31%)   7/ 8( 87%)   1/16(  6%)   9/36( 25%) 
+H:  LC113 - LC128     0/16(  0%)   0/ 8(  0%)   0/16(  0%)   0/36(  0%) 
+
+
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                             0/64     (  0%)
+Total logic cells used:                          0/128    (  0%)
+Total shareable expanders used:                  0/128    (  0%)
+Total Turbo logic cells used:                   16/128    ( 12%)
+Total shareable expanders not available (n/a):   2/128    (  1%)
+Average fan-in:                                  4.50
+Total fan-in:                                    72
+
+Total input pins required:                      12
+Total fast input logic cells required:           0
+Total output pins required:                     12
+Total bidirectional pins required:               0
+Total reserved pins required                     4
+Total logic cells required:                     16
+Total flipflops required:                        2
+Total product terms required:                   49
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          13
+
+Synthesized logic cells:                        10/ 128   (  7%)
+
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  83      -   -       INPUT               0      0   0    0    0    0    0  clk
+  54   (83)  (F)      INPUT               0      0   0    0    0    3    0  pa_a
+  55   (85)  (F)      INPUT               0      0   0    0    0    3    0  pa_b
+  56   (86)  (F)      INPUT               0      0   0    0    0    3    0  pa_c
+  57   (88)  (F)      INPUT               0      0   0    0    0    3    0  pa_d
+  49   (73)  (E)      INPUT               0      0   0    0    0    2    2  patternA
+  50   (75)  (E)      INPUT               0      0   0    0    0    2    2  patternB
+  58   (91)  (F)      INPUT               0      0   0    0    0    3    0  pb_a
+  60   (93)  (F)      INPUT               0      0   0    0    0    3    0  pb_b
+  61   (94)  (F)      INPUT               0      0   0    0    0    3    0  pb_c
+  63   (97)  (G)      INPUT               0      0   0    0    0    3    0  pb_d
+  51   (77)  (E)      INPUT  G            0      0   0    0    0    6    0  reset
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  68    105    G     OUTPUT      t        1      1   0    2    2    0    0  CorrectA
+  67    104    G     OUTPUT      t        1      1   0    2    2    0    0  correctB
+  21     19    B     OUTPUT    s t        0      0   0    5    1    2    0  pap
+  20     21    B     OUTPUT    s t        0      0   0    5    1    1    2  pa0
+  18     24    B     OUTPUT    s t        0      0   0    5    1    1    2  pa1
+  16     27    B     OUTPUT    s t        0      0   0    5    1    2    0  pbp
+  15     29    B     OUTPUT    s t        0      0   0    5    1    1    2  pb0
+  12      3    A     OUTPUT    s t        0      0   0    5    1    1    2  pb1
+  64     99    G     OUTPUT      t        0      0   0    0    2    0    0  pressTwo
+  69    107    G         FF   +  t        0      0   0    0    0    1    4  round0
+  70    109    G         FF      t        0      0   0    0    1    0    4  round1
+  52     80    E     OUTPUT      t        0      0   0    0    0    0    0  toGround
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   -     ??   ??       SOFT    s t        8      1   1    2    4    1    1  |AnswerCheck:31|~208~1
+   -     ??   ??       SOFT    s t        0      0   0    0    5    1    0  |AnswerCheck:31|~256~1
+   -     ??   ??       SOFT    s t        8      1   1    2    4    1    1  |AnswerCheck:32|~208~1
+   -     ??   ??       SOFT    s t        0      0   0    0    5    1    0  |AnswerCheck:32|~256~1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+           Logic cells placed in LAB 'A'
+        +- LC3 pb1
+        | 
+        |   Other LABs fed by signals
+        |   that feed LAB 'A'
+LC      | | A B C D E F G H |     Logic cells that feed LAB 'A':
+LC3  -> * | * - - - - - - - | <-- pb1
+
+Pin
+83   -> - | - - - - - - - - | <-- clk
+58   -> * | * * - - - - - - | <-- pb_a
+60   -> * | * * - - - - - - | <-- pb_b
+61   -> * | * * - - - - - - | <-- pb_c
+63   -> * | * * - - - - - - | <-- pb_d
+51   -> * | * * - - - - - - | <-- reset
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                   Logic cells placed in LAB 'B'
+        +--------- LC19 pap
+        | +------- LC21 pa0
+        | | +----- LC24 pa1
+        | | | +--- LC27 pbp
+        | | | | +- LC29 pb0
+        | | | | | 
+        | | | | |   Other LABs fed by signals
+        | | | | |   that feed LAB 'B'
+LC      | | | | | | A B C D E F G H |     Logic cells that feed LAB 'B':
+LC19 -> * - - - - | - * - - - - * - | <-- pap
+LC21 -> - * - - - | - * - - - - - - | <-- pa0
+LC24 -> - - * - - | - * - - - - - - | <-- pa1
+LC27 -> - - - * - | - * - - - - * - | <-- pbp
+LC29 -> - - - - * | - * - - - - - - | <-- pb0
+
+Pin
+83   -> - - - - - | - - - - - - - - | <-- clk
+54   -> * * * - - | - * - - - - - - | <-- pa_a
+55   -> * * * - - | - * - - - - - - | <-- pa_b
+56   -> * * * - - | - * - - - - - - | <-- pa_c
+57   -> * * * - - | - * - - - - - - | <-- pa_d
+58   -> - - - * * | * * - - - - - - | <-- pb_a
+60   -> - - - * * | * * - - - - - - | <-- pb_b
+61   -> - - - * * | * * - - - - - - | <-- pb_c
+63   -> - - - * * | * * - - - - - - | <-- pb_d
+51   -> * * * * * | * * - - - - - - | <-- reset
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'E':
+
+           Logic cells placed in LAB 'E'
+        +- LC80 toGround
+        | 
+        |   Other LABs fed by signals
+        |   that feed LAB 'E'
+LC      | | A B C D E F G H |     Logic cells that feed LAB 'E':
+
+Pin
+83   -> - | - - - - - - - - | <-- clk
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'G':
+
+                   Logic cells placed in LAB 'G'
+        +--------- LC105 CorrectA
+        | +------- LC104 correctB
+        | | +----- LC99 pressTwo
+        | | | +--- LC107 round0
+        | | | | +- LC109 round1
+        | | | | | 
+        | | | | |   Other LABs fed by signals
+        | | | | |   that feed LAB 'G'
+LC      | | | | | | A B C D E F G H |     Logic cells that feed LAB 'G':
+LC107-> - - - * * | - - - - - - * - | <-- round0
+
+Pin
+83   -> - - - - - | - - - - - - - - | <-- clk
+49   -> * * - - - | - - - - - - * - | <-- patternA
+50   -> * * - - - | - - - - - - * - | <-- patternB
+LC19 -> - - * - - | - * - - - - * - | <-- pap
+LC27 -> - - * - - | - * - - - - * - | <-- pbp
+LC?? -> * - - - - | - - - - - - * - | <-- |AnswerCheck:31|~208~1
+LC?? -> * - - - - | - - - - - - * - | <-- |AnswerCheck:31|~256~1
+LC?? -> - * - - - | - - - - - - * - | <-- |AnswerCheck:32|~208~1
+LC?? -> - * - - - | - - - - - - * - | <-- |AnswerCheck:32|~256~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:               e:\finalproject\test1userbuffer.rpt
+test1userbuffer
+
+** EQUATIONS **
+
+clk      : INPUT;
+pa_a     : INPUT;
+pa_b     : INPUT;
+pa_c     : INPUT;
+pa_d     : INPUT;
+patternA : INPUT;
+patternB : INPUT;
+pb_a     : INPUT;
+pb_b     : INPUT;
+pb_c     : INPUT;
+pb_d     : INPUT;
+reset    : INPUT;
+
+-- Node name is 'CorrectA' 
+-- Equation name is 'CorrectA', type is output 
+ CorrectA = LCELL( _EQ001 $  GND);
+  _EQ001 =  _N015 &  patternA &  patternB
+         #  _N016 &  _X001;
+  _X001  = EXP( patternA &  patternB);
+
+-- Node name is 'correctB' 
+-- Equation name is 'correctB', type is output 
+ correctB = LCELL( _EQ002 $  GND);
+  _EQ002 =  _N013 &  patternA &  patternB
+         #  _N014 &  _X001;
+  _X001  = EXP( patternA &  patternB);
+
+-- Node name is 'pap' = '|UserBuffer:3|~78~1' 
+-- Equation name is 'pap', type is output 
+ pap     = LCELL( _EQ003 $  VCC);
+  _EQ003 =  pa_a &  pa_b &  pa_c &  pa_d &  reset
+         #  pa_a &  pa_b &  pa_c &  pa_d & !pap
+         # !pa_a & !pa_b & !pa_c & !pa_d & !pap;
+
+-- Node name is 'pa0' = '|UserBuffer:3|~38~1' 
+-- Equation name is 'pa0', type is output 
+ pa0     = LCELL( _EQ004 $  GND);
+  _EQ004 =  pa_a &  pa_c &  pa0 & !reset
+         # !pa_b & !pa_c & !pa_d &  pa0
+         #  pa_a &  pa_c & !pa_d
+         #  pa_a & !pa_b;
+
+-- Node name is 'pa1' = '|UserBuffer:3|~58~1' 
+-- Equation name is 'pa1', type is output 
+ pa1     = LCELL( _EQ005 $  GND);
+  _EQ005 = !pa_a & !pa_b & !pa_c & !pa_d &  pa1
+         #  pa_a &  pa_b &  pa1 & !reset
+         #  pa_a &  pa_b & !pa_d
+         #  pa_a &  pa_b & !pa_c;
+
+-- Node name is 'pbp' = '|UserBuffer:4|~78~1' 
+-- Equation name is 'pbp', type is output 
+ pbp     = LCELL( _EQ006 $  VCC);
+  _EQ006 =  pb_a &  pb_b &  pb_c &  pb_d &  reset
+         #  pb_a &  pb_b &  pb_c &  pb_d & !pbp
+         # !pb_a & !pb_b & !pb_c & !pb_d & !pbp;
+
+-- Node name is 'pb0' = '|UserBuffer:4|~38~1' 
+-- Equation name is 'pb0', type is output 
+ pb0     = LCELL( _EQ007 $  GND);
+  _EQ007 =  pb_a &  pb_c &  pb0 & !reset
+         # !pb_b & !pb_c & !pb_d &  pb0
+         #  pb_a &  pb_c & !pb_d
+         #  pb_a & !pb_b;
+
+-- Node name is 'pb1' = '|UserBuffer:4|~58~1' 
+-- Equation name is 'pb1', type is output 
+ pb1     = LCELL( _EQ008 $  GND);
+  _EQ008 = !pb_a & !pb_b & !pb_c & !pb_d &  pb1
+         #  pb_a &  pb_b &  pb1 & !reset
+         #  pb_a &  pb_b & !pb_d
+         #  pb_a &  pb_b & !pb_c;
+
+-- Node name is 'pressTwo' 
+-- Equation name is 'pressTwo', type is output 
+ pressTwo = LCELL( _EQ009 $  GND);
+  _EQ009 =  pap &  pbp;
+
+-- Node name is 'round0' = '|T_Latch:55|:10' 
+-- Equation name is 'round0', type is output 
+ round0  = TFFE( VCC, GLOBAL(!reset),  VCC,  VCC,  VCC);
+
+-- Node name is 'round1' = '|T_Latch:56|:10' 
+-- Equation name is 'round1', type is output 
+ round1  = TFFE( VCC, !round0,  VCC,  VCC,  VCC);
+
+-- Node name is 'toGround' 
+-- Equation name is 'toGround', type is output 
+ toGround = LCELL( GND $  GND);
+
+-- Node name is '|AnswerCheck:31|~208~1' 
+-- Equation name is '_N016', type is buried 
+-- synthesized logic cell 
+_N016    = LCELL( _EQ010 $  _EQ011);
+  _EQ010 = !patternA & !patternB & !pa1 &  round1 &  _X001 &  _X002 &  _X003 & 
+              _X004 &  _X005 &  _X006 &  _X007
+         # !patternA & !patternB &  pa1 & !round1 &  _X001 &  _X002 &  _X003 & 
+              _X004 &  _X005 &  _X006 &  _X007
+         #  patternB &  pa1 &  round1 &  _X001 &  _X002 &  _X003 &  _X004 & 
+              _X005 &  _X006 &  _X007
+         #  patternA &  pa1 &  round1 &  _X001 &  _X002 &  _X003 &  _X004 & 
+              _X005 &  _X006 &  _X007;
+  _X001  = EXP( patternA &  patternB);
+  _X002  = EXP( patternA & !pa1 & !round1);
+  _X003  = EXP( patternA & !pa0 &  round0);
+  _X004  = EXP( patternA &  pa0 & !round0);
+  _X005  = EXP(!patternA &  pa0 &  round0);
+  _X006  = EXP( patternB & !pa1 & !round1);
+  _X007  = EXP(!patternA & !pa0 & !round0);
+  _EQ011 =  _X001 &  _X002 &  _X003 &  _X004 &  _X005 &  _X006 &  _X007;
+  _X001  = EXP( patternA &  patternB);
+  _X002  = EXP( patternA & !pa1 & !round1);
+  _X003  = EXP( patternA & !pa0 &  round0);
+  _X004  = EXP( patternA &  pa0 & !round0);
+  _X005  = EXP(!patternA &  pa0 &  round0);
+  _X006  = EXP( patternB & !pa1 & !round1);
+  _X007  = EXP(!patternA & !pa0 & !round0);
+
+-- Node name is '|AnswerCheck:31|~256~1' 
+-- Equation name is '_N015', type is buried 
+-- synthesized logic cell 
+_N015    = LCELL( _EQ012 $  _N016);
+  _EQ012 = !_N016 & !pa0 &  pa1 &  round0 & !round1
+         # !_N016 & !pa0 & !pa1 & !round0 & !round1
+         # !_N016 &  pa0 &  pa1 &  round1;
+
+-- Node name is '|AnswerCheck:32|~208~1' 
+-- Equation name is '_N014', type is buried 
+-- synthesized logic cell 
+_N014    = LCELL( _EQ013 $  _EQ014);
+  _EQ013 = !patternA & !patternB & !pb1 &  round1 &  _X001 &  _X008 &  _X009 & 
+              _X010 &  _X011 &  _X012 &  _X013
+         # !patternA & !patternB &  pb1 & !round1 &  _X001 &  _X008 &  _X009 & 
+              _X010 &  _X011 &  _X012 &  _X013
+         #  patternB &  pb1 &  round1 &  _X001 &  _X008 &  _X009 &  _X010 & 
+              _X011 &  _X012 &  _X013
+         #  patternA &  pb1 &  round1 &  _X001 &  _X008 &  _X009 &  _X010 & 
+              _X011 &  _X012 &  _X013;
+  _X001  = EXP( patternA &  patternB);
+  _X008  = EXP( patternA & !pb0 &  round0);
+  _X009  = EXP(!patternA & !pb0 & !round0);
+  _X010  = EXP( patternA &  pb0 & !round0);
+  _X011  = EXP(!patternA &  pb0 &  round0);
+  _X012  = EXP( patternB & !pb1 & !round1);
+  _X013  = EXP( patternA & !pb1 & !round1);
+  _EQ014 =  _X001 &  _X008 &  _X009 &  _X010 &  _X011 &  _X012 &  _X013;
+  _X001  = EXP( patternA &  patternB);
+  _X008  = EXP( patternA & !pb0 &  round0);
+  _X009  = EXP(!patternA & !pb0 & !round0);
+  _X010  = EXP( patternA &  pb0 & !round0);
+  _X011  = EXP(!patternA &  pb0 &  round0);
+  _X012  = EXP( patternB & !pb1 & !round1);
+  _X013  = EXP( patternA & !pb1 & !round1);
+
+-- Node name is '|AnswerCheck:32|~256~1' 
+-- Equation name is '_N013', type is buried 
+-- synthesized logic cell 
+_N013    = LCELL( _EQ015 $  _N014);
+  _EQ015 = !_N014 & !pb0 &  pb1 &  round0 & !round1
+         # !_N014 & !pb0 & !pb1 & !round0 & !round1
+         # !_N014 &  pb0 &  pb1 &  round1;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                        e:\finalproject\test1userbuffer.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:01
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   --------------------------             --------
+   Total Time                             00:00:01
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 9,935K
