@@ -50,7 +50,7 @@ scoreB2                          : 18
 GND                              : 19
 round0                           : 20
 round1                           : 21
-RESERVED                         : 22
+round2                           : 22
 TMS                              : 23
 RESERVED                         : 24
 RESERVED                         : 25
@@ -97,11 +97,11 @@ led2                             : 65
 VCCIO                            : 66
 led3                             : 67
 led4                             : 68
-open                             : 69
+RESERVED                         : 69
 RESERVED                         : 70
 TDO                              : 71
 GND                              : 72
-RESERVED                         : 73
+open                             : 73
 RESERVED                         : 74
 RESERVED                         : 75
 RESERVED                         : 76

@@ -21,6 +21,7 @@
 --
 CHIP testvccgnd
 BEGIN
+	|round2 :	OUTPUT_PIN = 22;
 	|round1 :	OUTPUT_PIN = 21;
 	|round0 :	OUTPUT_PIN = 20;
 	|reset :	INPUT_PIN = 51;

@@ -101,9 +101,9 @@ RESERVED                         : 69
 RESERVED                         : 70
 TDO                              : 71
 GND                              : 72
-s1                               : 73
-s0                               : 74
-press                            : 75
+press                            : 73
+s1                               : 74
+s0                               : 75
 RESERVED                         : 76
 RESERVED                         : 77
 VCCIO                            : 78

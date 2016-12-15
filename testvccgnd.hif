@@ -24,80 +24,79 @@ HIF003
 --
 FILES
 {
-	clockdivider.v
+	altshift.tdf
 	{
-		clockdivider [] [t_ff.v]
+		altshift [DEPTH=0,WIDTH=4,USE_LPM_FOR_AHDL_OPERATORS] []
 		{
-			5 [] [];
-		}
-	}
-	t_ff.v
-	{
-		D_FF [] []
-		{
-			7 [] [];
-		}
-		t_ff [] []
-		{
-			6 [] [];
-		}
-	}
-	userbuffer.v
-	{
-		userbuffer [] []
-		{
-			1 [] [];
-		}
-	}
-	answercheck.v
-	{
-		answercheck [] []
-		{
-			2 [] [];
-		}
-	}
-	readybox.v
-	{
-		readybox [] []
-		{
-			3 [] [];
-		}
-	}
-	statebox.v
-	{
-		statebox [] []
-		{
-			8 [] [];
-		}
-	}
-	extractbox.v
-	{
-		extractbox [] []
-		{
-			4 [] [];
-		}
-	}
-	lpm_add_sub.tdf
-	{
-		lpm_add_sub [STYLE,DEVICE_FAMILY,CARRY_CHAIN_LENGTH=32,CARRY_CHAIN=IGNORE,OPTIMIZE_FOR_SPEED=5,MAXIMIZE_SPEED=5,LPM_PIPELINE=0,ONE_INPUT_IS_CONSTANT=NO,LPM_DIRECTION=DEFAULT,LPM_REPRESENTATION=SIGNED,LPM_WIDTH,USE_LPM_FOR_AHDL_OPERATORS] [lpm_add_sub.inc,addcore.inc,look_add.inc,bypassff.inc,altshift.inc,aglobal.inc]
-		{
-			9 [STYLE=NORMAL,DEVICE_FAMILY=MAX7000S,CARRY_CHAIN_LENGTH=0,CARRY_CHAIN=IGNORE,OPTIMIZE_FOR_SPEED=5,MAXIMIZE_SPEED=5,LPM_PIPELINE=0,ONE_INPUT_IS_CONSTANT=YES,LPM_DIRECTION=ADD,LPM_REPRESENTATION=UNSIGNED,LPM_WIDTH=3,USE_LPM_FOR_AHDL_OPERATORS=OFF] [DATAA2,DATAA1,DATAA0,DATAB2,DATAB1,DATAB0,RESULT0,RESULT1,RESULT2];
+			8 [DEPTH=0,WIDTH=1,USE_LPM_FOR_AHDL_OPERATORS=OFF] [result0,data0];
+			7 [DEPTH=0,WIDTH=3,USE_LPM_FOR_AHDL_OPERATORS=OFF] [result2,result1,result0,data2,data1,data0];
 		}
 	}
 	addcore.tdf
 	{
 		addcore [DEVICE_FAMILY,CARRY_CHAIN_LENGTH,CARRY_CHAIN,CONSTANT_CIN,width,USE_LPM_FOR_AHDL_OPERATORS] [addcore.inc,aglobal.inc]
 		{
-			10 [DEVICE_FAMILY=MAX7000S,CARRY_CHAIN_LENGTH=0,CARRY_CHAIN=IGNORE,CONSTANT_CIN=1,width=3,USE_LPM_FOR_AHDL_OPERATORS=OFF] [cin,datab0,datab1,datab2,dataa0,dataa1,dataa2,result0,result1,result2];
-			11 [DEVICE_FAMILY=MAX7000S,CARRY_CHAIN_LENGTH=0,CARRY_CHAIN=IGNORE,CONSTANT_CIN=1,width=8,USE_LPM_FOR_AHDL_OPERATORS=OFF] [cin,datab0,datab1,datab2,dataa0,dataa1,dataa2,result0,result1,result2,result3];
+			6 [DEVICE_FAMILY=MAX7000S,CARRY_CHAIN_LENGTH=0,CARRY_CHAIN=IGNORE,CONSTANT_CIN=1,width=8,USE_LPM_FOR_AHDL_OPERATORS=OFF] [result3,result2,result1,result0,dataa2,dataa1,dataa0,datab2,datab1,datab0,cin];
+			5 [DEVICE_FAMILY=MAX7000S,CARRY_CHAIN_LENGTH=0,CARRY_CHAIN=IGNORE,CONSTANT_CIN=1,width=3,USE_LPM_FOR_AHDL_OPERATORS=OFF] [result2,result1,result0,dataa2,dataa1,dataa0,datab2,datab1,datab0,cin];
 		}
 	}
-	altshift.tdf
+	lpm_add_sub.tdf
 	{
-		altshift [DEPTH=0,WIDTH=4,USE_LPM_FOR_AHDL_OPERATORS] []
+		lpm_add_sub [STYLE,DEVICE_FAMILY,CARRY_CHAIN_LENGTH=32,CARRY_CHAIN=IGNORE,OPTIMIZE_FOR_SPEED=5,MAXIMIZE_SPEED=5,LPM_PIPELINE=0,ONE_INPUT_IS_CONSTANT=NO,LPM_DIRECTION=DEFAULT,LPM_REPRESENTATION=SIGNED,LPM_WIDTH,USE_LPM_FOR_AHDL_OPERATORS] [lpm_add_sub.inc,addcore.inc,look_add.inc,bypassff.inc,altshift.inc,aglobal.inc]
 		{
-			12 [DEPTH=0,WIDTH=3,USE_LPM_FOR_AHDL_OPERATORS=OFF] [data0,data1,data2,result0,result1,result2];
-			13 [DEPTH=0,WIDTH=1,USE_LPM_FOR_AHDL_OPERATORS=OFF] [data0,result0];
+			4 [STYLE=NORMAL,DEVICE_FAMILY=MAX7000S,CARRY_CHAIN_LENGTH=0,CARRY_CHAIN=IGNORE,OPTIMIZE_FOR_SPEED=5,MAXIMIZE_SPEED=5,LPM_PIPELINE=0,ONE_INPUT_IS_CONSTANT=YES,LPM_DIRECTION=ADD,LPM_REPRESENTATION=UNSIGNED,LPM_WIDTH=3,USE_LPM_FOR_AHDL_OPERATORS=OFF] [RESULT2,RESULT1,RESULT0,DATAB0,DATAB1,DATAB2,DATAA0,DATAA1,DATAA2];
+		}
+	}
+	extractbox.v
+	{
+		extractbox [] []
+		{
+			2 [] [];
+		}
+	}
+	statebox.v
+	{
+		statebox [] []
+		{
+			3 [] [];
+		}
+	}
+	readybox.v
+	{
+		readybox [] []
+		{
+		}
+	}
+	answercheck.v
+	{
+		answercheck [] []
+		{
+			1 [] [];
+		}
+	}
+	userbuffer.v
+	{
+		userbuffer [] []
+		{
+			12 [] [];
+		}
+	}
+	t_ff.v
+	{
+		t_ff [] []
+		{
+			10 [] [];
+		}
+		D_FF [] []
+		{
+			11 [] [];
+		}
+	}
+	clockdivider.v
+	{
+		clockdivider [] [t_ff.v]
+		{
+			9 [] [];
 		}
 	}
 	testvccgnd.gdf
@@ -112,135 +111,135 @@ TREE
 {
 	testvccgnd::(0,0):(0): testvccgnd.gdf
 	{
-		userbuffer::(0,0):(80): userbuffer.v;
-		userbuffer::(0,0):(79): userbuffer.v;
-		userbuffer::(0,0):(78): userbuffer.v;
-		userbuffer::(0,0):(77): userbuffer.v;
-		readybox::(0,0):(75): readybox.v;
-		clockdivider::(0,0):(69): clockdivider.v
+		extractbox::(0,0):(30): extractbox.v;
+		statebox::(0,0):(28): statebox.v;
+		readybox::(0,0):(23): readybox.v;
+		answercheck::(0,0):(22): answercheck.v;
+		answercheck::(0,0):(21): answercheck.v;
+		userbuffer::(0,0):(20): userbuffer.v;
+		userbuffer::(0,0):(18): userbuffer.v;
+		t_ff::(0,0):(35): t_ff.v;
+		clockdivider::(0,0):(36): clockdivider.v;
+		clockdivider::(0,0):(37): clockdivider.v;
+		clockdivider::(0,0):(57): clockdivider.v;
+		clockdivider::(0,0):(58): clockdivider.v;
+		t_ff::(0,0):(59): t_ff.v;
+		statebox::(0,0):(60): statebox.v
 		{
-			t_ff:6:(6,0):(3,clkDiv1): t_ff.v
+			lpm_add_sub:4:(25,0):(123): lpm_add_sub.tdf
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				addcore:5:(212,4):(43,adder): addcore.tdf
+				{
+					addcore:6:(178,10):(40,adder0): addcore.tdf;
+				}
+				altshift:7:(222,2):(59,result_ext_latency_ffs): altshift.tdf;
+				altshift:8:(224,2):(71,carry_ext_latency_ffs): altshift.tdf;
+				altshift:8:(226,2):(79,oflow_ext_latency_ffs): altshift.tdf;
 			}
-			t_ff:6:(7,0):(4,clkDiv2): t_ff.v
+			lpm_add_sub:4:(28,0):(124): lpm_add_sub.tdf
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				addcore:5:(212,4):(43,adder): addcore.tdf
+				{
+					addcore:6:(178,10):(40,adder0): addcore.tdf;
+				}
+				altshift:7:(222,2):(59,result_ext_latency_ffs): altshift.tdf;
+				altshift:8:(224,2):(71,carry_ext_latency_ffs): altshift.tdf;
+				altshift:8:(226,2):(79,oflow_ext_latency_ffs): altshift.tdf;
 			}
-			t_ff:6:(8,0):(5,clkDiv3): t_ff.v
+			lpm_add_sub:4:(30,0):(125): lpm_add_sub.tdf
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				addcore:5:(212,4):(43,adder): addcore.tdf
+				{
+					addcore:6:(178,10):(40,adder0): addcore.tdf;
+				}
+				altshift:7:(222,2):(59,result_ext_latency_ffs): altshift.tdf;
+				altshift:8:(224,2):(71,carry_ext_latency_ffs): altshift.tdf;
+				altshift:8:(226,2):(79,oflow_ext_latency_ffs): altshift.tdf;
 			}
-			t_ff:6:(9,0):(6,clkDiv4): t_ff.v
+		}
+		clockdivider::(0,0):(66): clockdivider.v
+		{
+			t_ff:10:(6,0):(3,clkDiv1): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(10,0):(7,clkDiv5): t_ff.v
+			t_ff:10:(7,0):(4,clkDiv2): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(11,0):(8,clkDiv6): t_ff.v
+			t_ff:10:(8,0):(5,clkDiv3): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(12,0):(9,clkDiv7): t_ff.v
+			t_ff:10:(9,0):(6,clkDiv4): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(13,0):(10,clkDiv8): t_ff.v
+			t_ff:10:(10,0):(7,clkDiv5): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(14,0):(11,clkDiv9): t_ff.v
+			t_ff:10:(11,0):(8,clkDiv6): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
+			}
+			t_ff:10:(12,0):(9,clkDiv7): t_ff.v
+			{
+				d_ff:11:(6,0):(6,d1): t_ff.v;
+			}
+			t_ff:10:(13,0):(10,clkDiv8): t_ff.v
+			{
+				d_ff:11:(6,0):(6,d1): t_ff.v;
+			}
+			t_ff:10:(14,0):(11,clkDiv9): t_ff.v
+			{
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
 		}
 		clockdivider::(0,0):(67): clockdivider.v;
-		clockdivider::(0,0):(66): clockdivider.v
+		clockdivider::(0,0):(69): clockdivider.v
 		{
-			t_ff:6:(6,0):(3,clkDiv1): t_ff.v
+			t_ff:10:(6,0):(3,clkDiv1): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(7,0):(4,clkDiv2): t_ff.v
+			t_ff:10:(7,0):(4,clkDiv2): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(8,0):(5,clkDiv3): t_ff.v
+			t_ff:10:(8,0):(5,clkDiv3): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(9,0):(6,clkDiv4): t_ff.v
+			t_ff:10:(9,0):(6,clkDiv4): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(10,0):(7,clkDiv5): t_ff.v
+			t_ff:10:(10,0):(7,clkDiv5): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(11,0):(8,clkDiv6): t_ff.v
+			t_ff:10:(11,0):(8,clkDiv6): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(12,0):(9,clkDiv7): t_ff.v
+			t_ff:10:(12,0):(9,clkDiv7): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(13,0):(10,clkDiv8): t_ff.v
+			t_ff:10:(13,0):(10,clkDiv8): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
-			t_ff:6:(14,0):(11,clkDiv9): t_ff.v
+			t_ff:10:(14,0):(11,clkDiv9): t_ff.v
 			{
-				d_ff:7:(6,0):(6,d1): t_ff.v;
+				d_ff:11:(6,0):(6,d1): t_ff.v;
 			}
 		}
-		statebox::(0,0):(60): statebox.v
-		{
-			lpm_add_sub:9:(25,0):(123): lpm_add_sub.tdf
-			{
-				addcore:10:(212,4):(43,adder): addcore.tdf
-				{
-					addcore:11:(178,10):(40,adder0): addcore.tdf;
-				}
-				altshift:12:(222,2):(59,result_ext_latency_ffs): altshift.tdf;
-				altshift:13:(224,2):(71,carry_ext_latency_ffs): altshift.tdf;
-				altshift:13:(226,2):(79,oflow_ext_latency_ffs): altshift.tdf;
-			}
-			lpm_add_sub:9:(28,0):(124): lpm_add_sub.tdf
-			{
-				addcore:10:(212,4):(43,adder): addcore.tdf
-				{
-					addcore:11:(178,10):(40,adder0): addcore.tdf;
-				}
-				altshift:12:(222,2):(59,result_ext_latency_ffs): altshift.tdf;
-				altshift:13:(224,2):(71,carry_ext_latency_ffs): altshift.tdf;
-				altshift:13:(226,2):(79,oflow_ext_latency_ffs): altshift.tdf;
-			}
-			lpm_add_sub:9:(30,0):(125): lpm_add_sub.tdf
-			{
-				addcore:10:(212,4):(43,adder): addcore.tdf
-				{
-					addcore:11:(178,10):(40,adder0): addcore.tdf;
-				}
-				altshift:12:(222,2):(59,result_ext_latency_ffs): altshift.tdf;
-				altshift:13:(224,2):(71,carry_ext_latency_ffs): altshift.tdf;
-				altshift:13:(226,2):(79,oflow_ext_latency_ffs): altshift.tdf;
-			}
-		}
-		t_ff::(0,0):(59): t_ff.v;
-		clockdivider::(0,0):(58): clockdivider.v;
-		clockdivider::(0,0):(57): clockdivider.v;
-		clockdivider::(0,0):(37): clockdivider.v;
-		clockdivider::(0,0):(36): clockdivider.v;
-		t_ff::(0,0):(35): t_ff.v;
-		userbuffer::(0,0):(18): userbuffer.v;
-		userbuffer::(0,0):(20): userbuffer.v;
-		answercheck::(0,0):(21): answercheck.v;
-		answercheck::(0,0):(22): answercheck.v;
-		readybox::(0,0):(23): readybox.v;
-		statebox::(0,0):(28): statebox.v;
-		extractbox::(0,0):(30): extractbox.v;
+		readybox::(0,0):(75): readybox.v;
+		userbuffer::(0,0):(77): userbuffer.v;
+		userbuffer::(0,0):(78): userbuffer.v;
+		userbuffer::(0,0):(79): userbuffer.v;
+		userbuffer::(0,0):(80): userbuffer.v;
 	}
 }
