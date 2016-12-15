@@ -12,5 +12,5 @@ module ClockDivider(q, clk);
 	T_FF clkDiv7(d[6], 1'b1, d[5], 1'b0);
 	T_FF clkDiv8(d[7], 1'b1, d[6], 1'b0);
 	T_FF clkDiv9(q, 1'b1, d[7], 1'b0);
-	//T_FF clkDiv10(q, 1'b1, d[8], 1'b0);
+
 endmodule

@@ -6,15 +6,8 @@ module StateBox(reset, scoreA, scoreB, problem, check1, check2, ready, greset ,c
 	reg [2:0]scoreA, scoreB;
 	reg [2:0]problem;
 	reg visit;
-	
-	//problem <= 0;
-	//scoreA <= 0;
-	//scoreB <= 0;
 
 	always @(posedge clk) begin
-		//if(showAnswer) begin
-			//problem <= problem + 1;
-			//reset <= 1'b1;
 		if(greset) begin
 			scoreA <= 3'b000;
 			scoreB <= 3'b000;
@@ -35,5 +28,6 @@ module StateBox(reset, scoreA, scoreB, problem, check1, check2, ready, greset ,c
 			visit <= 1'b0;
 		end
 	end
+
 endmodule
 

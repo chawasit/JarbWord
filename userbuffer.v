@@ -7,7 +7,6 @@ module UserBuffer(s0, s1, press, a ,b, c ,d, reset);
 	or orAll(pressin, !a, !b, !c, !d, reset);
 	always
 		begin
-		// pressin <= (~a) || (~b) || (~c) || (~d) || reset;
 		if(reset) begin
 			s0 <= 1'b0;
 			s1 <= 1'b0;
